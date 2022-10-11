@@ -1,0 +1,41 @@
+footer {
+	background-color: $dark-blue;
+	background-image: url(../icons/angels-bg-footer-01.svg);
+	background-size: cover;
+	color: $white;
+	padding: 3.6rem 12rem 4.8rem 12rem;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	div,
+	address {
+		//all columns
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+	}
+	address + div {
+		//center column
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		img {
+			padding-bottom: 2.4rem;
+		}
+		small,
+		small a {
+			all: revert;
+			color: white;
+			font-size: 1.2rem;
+			padding-bottom: 1.2rem;
+		}
+	}
+	address:first-child,
+	div:last-child {
+		//first and last columns
+		padding: 2.4rem 0rem 0rem 0rem;
+		p,
+		a {
+			padding: 0rem 0rem 2.4rem 0rem;
+		}
+	}
+}

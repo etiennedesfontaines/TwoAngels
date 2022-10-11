@@ -1,0 +1,469 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  color: #1b2c8c;
+  text-align: center;
+}
+
+h3 {
+  font-size: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+
+h4 {
+  font-size: 3.2rem;
+  padding: 3.2rem;
+}
+
+p,
+li,
+button,
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+a,
+li {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  color: #1b2c8c;
+  width: 26rem;
+  height: 4.8rem;
+  border: none;
+  border-radius: 0.8rem;
+  -webkit-filter: drop-shadow(0px 2px 5px rgba(27, 44, 140, 0.3));
+          filter: drop-shadow(0px 2px 5px rgba(27, 44, 140, 0.3));
+}
+
+.primary-btn {
+  background-color: #1b2c8c;
+  color: white;
+  margin-right: 4.8rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 12rem 0rem 12rem;
+  background-color: #1b2c8c;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(27, 44, 140, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(27, 44, 140, 0.25));
+  z-index: 999;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header ul li {
+  padding: 0rem 0.8rem 0rem 0.8rem;
+}
+
+header ul li:nth-child(2) {
+  position: relative;
+}
+
+header ul li:nth-child(2) img {
+  padding-left: 0.8rem;
+}
+
+header ul li:last-child {
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+header ul li:last-child a {
+  color: #1b2c8c;
+  font-weight: bold;
+}
+
+#nav-dropdown {
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  border-radius: 0 0 8px 8px;
+  background-color: #1b2c8c;
+}
+
+#nav-dropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 19.5rem;
+  height: auto;
+}
+
+#nav-dropdown ul li {
+  text-align: center;
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 0.8rem 0rem 0.8rem 0rem;
+}
+
+#nav-dropdown ul li:last-child {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: inline-block;
+  background-color: #1b2c8c;
+  border: none;
+}
+
+#nav-dropdown ul li:last-child a {
+  color: white;
+  font-weight: 400;
+}
+
+#hero {
+  height: 100vh;
+  position: relative;
+  background-image: url(../images/desktop/hero/hero-01.png);
+  background-size: cover;
+  margin-bottom: 9.6rem;
+}
+
+#hero div {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5cbbfc), color-stop(60%, rgba(92, 187, 252, 0.17)));
+  background-image: linear-gradient(to bottom, #5cbbfc, rgba(92, 187, 252, 0.17) 60%);
+  -webkit-mask-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(70%, rgba(0, 0, 0, 0.6)), to(black));
+  -webkit-mask-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6) 70%, black 100%);
+          mask-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(70%, rgba(0, 0, 0, 0.6)), to(black));
+          mask-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6) 70%, black 100%);
+}
+
+#hero header {
+  all: revert;
+  position: absolute;
+  top: 12rem;
+  left: 12rem;
+  text-align: center;
+}
+
+#hero header h2 {
+  font-size: 13.6rem;
+}
+
+#hero header h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 300;
+  padding: 2.4rem 0rem 0rem 0rem;
+}
+
+#suites-and-cottages {
+  margin: 0rem 12rem 9.6rem 12rem;
+}
+
+#suites-and-cottages div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.4rem;
+}
+
+#suites-and-cottages a {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+#suites-and-cottages a div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1b2c8c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 10.4rem 0rem 10.4rem;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#suites-and-cottages a div:hover {
+  opacity: 75%;
+}
+
+#suites-and-cottages a p {
+  text-align: center;
+}
+
+#suites-and-cottages a h4 {
+  color: white;
+}
+
+aside {
+  border: 0.1rem solid #1b2c8c;
+  margin: 0rem 12rem 4.6rem 12rem;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+aside img:first-child {
+  width: 14.4rem;
+  height: auto;
+}
+
+aside img:last-child {
+  width: 5.2rem;
+  height: auto;
+}
+
+aside img {
+  margin: 2.4rem;
+}
+
+aside + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 9.6rem;
+}
+
+.activities {
+  text-align: center;
+  margin: 0 12rem 9.6rem 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.activities p {
+  padding: 0 2.4rem 4.8rem 2.4rem;
+}
+
+/*
+Why have my gloval styles not been applied
+h2 font-family?
+*/
+.suite {
+  margin: 12.8rem 12rem 0rem 12rem;
+  text-align: center;
+}
+
+.suite section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 9.6rem;
+}
+
+.suite section h2 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 4.8rem;
+}
+
+.suite section p {
+  padding: 0rem 24rem 0rem 24rem;
+}
+
+.suite img {
+  width: 100%;
+  height: auto;
+}
+
+.suite img + img {
+  width: 5.2rem;
+  height: auto;
+}
+
+.suite ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.suite ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.suite ul li img {
+  width: 4.8rem;
+  height: auto;
+}
+
+.suite ul li p {
+  color: #2c2d32;
+  width: 100%;
+  text-align: center;
+}
+
+.suite .cavalry {
+  margin-bottom: 4.8rem;
+}
+
+.suite div:last-child {
+  margin-bottom: 9.6rem;
+}
+
+footer {
+  background-color: #1b2c8c;
+  background-image: url(../icons/angels-bg-footer-01.svg);
+  background-size: cover;
+  color: white;
+  padding: 3.6rem 12rem 4.8rem 12rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+}
+
+footer div,
+footer address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+footer address + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer address + div img {
+  padding-bottom: 2.4rem;
+}
+
+footer address + div small,
+footer address + div small a {
+  all: revert;
+  color: white;
+  font-size: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+footer address:first-child,
+footer div:last-child {
+  padding: 2.4rem 0rem 0rem 0rem;
+}
+
+footer address:first-child p,
+footer address:first-child a,
+footer div:last-child p,
+footer div:last-child a {
+  padding: 0rem 0rem 2.4rem 0rem;
+}
+/*# sourceMappingURL=style.css.map */
