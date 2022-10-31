@@ -40,5 +40,3 @@ progressIndicators.forEach((indicator) => {
 });
 
 //IMAGE CAROUSEL CLOSE
-
-console.log(window.innerWidth);
