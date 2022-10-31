@@ -17,35 +17,39 @@
 		<title>TwoAngels</title>
 	</head>
 	<body>
-		<header>
-			<h1>
+		<!--Uncertain whether to call this header or nav-bar or navBar-->
+		<header class="nav-bar">
+			<h1 class="logo">
+				<!--Not sure how to name this a tag?-->
 				<a href="/index.html" title="Home page">
-					<img src="icons/logo.svg" alt="TwoAngels Logo" />
+					<img class="logo--img" src="icons/logo.svg" alt="TwoAngels Logo" />
 				</a>
 			</h1>
-
 			<nav>
 				<ul>
 					<li><a href="./index.html">Home</a></li>
-					<!--Does suites and cottages need to be wrapped by a button?-->
 					<li class="dropdown">
 						Suites and Cottages
 						<img src="./icons/chevron-down.svg" alt="chev" />
 
 						<nav id="nav-dropdown">
 							<ul>
-								<li><a href="">Luxury Suite</a></li>
-								<li><a href="">Family Suite</a></li>
-								<li><a href="">The Angel's Lair</a></li>
-								<li><a href="">The Oyster Shell</a></li>
-								<li><a href="">Lovers Nest</a></li>
-								<li><a href="">Main House</a></li>
+								<li><a href="./luxury-suite.html">Luxury Suite</a></li>
+								<li><a href="./family-suite.html">Family Suite</a></li>
+								<li><a href="./the-angels-lair.html">The Angel's Lair</a></li>
+								<li><a href="./the-oyster-shell.html">The Oyster Shell</a></li>
+								<li><a href="./lovers-nest.html">Lovers Nest</a></li>
+								<li><a href="./main-house.html">Main House</a></li>
 							</ul>
 						</nav>
 					</li>
-					<li><a href="">Activities</a></li>
-					<li><a href="">Contact</a></li>
-					<li><a href="">Book Now</a></li>
+					<li><a href="./activities.html">Activities</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+					<li>
+						<a href="https://book.nightsbridge.com/15693" target="_blank"
+							>Book Now</a
+						>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -55,8 +59,12 @@
 				<header>
 					<h2>TwoAngels</h2>
 					<h3>Water's Edge Guest House and Cottages</h3>
-					<button class="primary-btn">Book your dream holiday</button>
-					<button class="secondary-btn">Browse accomodation...</button>
+					<button class="primary-btn">
+						<a href=""> Book your dream holiday</a>
+					</button>
+					<button class="secondary-btn">
+						<a href=""> Browse Accomodation...</a>
+					</button>
 				</header>
 			</section>
 			<section id="suites-and-cottages">
@@ -64,7 +72,7 @@
 				<div>
 					<a href="./luxury-suite.html">
 						<img
-							src="./images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-accomodation-knysna-western-cape-luxury-suite.png"
+							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape-luxury-suite.jpg"
 							alt=""
 							class="accomodation-thumbnail"
 						/>
@@ -80,9 +88,9 @@
 							</p>
 						</div>
 					</a>
-					<a href="">
+					<a href="./family-suite.html">
 						<img
-							src="./images/desktop/accomodation/suites/family-suite/twoangels-seaside-accomodation-knysna-western-cape-family-suite.png"
+							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape-family-suite.jpg"
 							alt=""
 							class="accomodation-thumbnail"
 						/>
@@ -98,9 +106,9 @@
 							</p>
 						</div>
 					</a>
-					<a href="">
+					<a href="./the-angels-lair.html">
 						<img
-							src="./images/desktop/accomodation/suites/the-angels-lair/twoangels-seaside-accomodation-knysna-western-cape-angels-lair.png"
+							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape-angels-lair.jpg"
 							alt=""
 							class="accomodation-thumbnail"
 						/>
@@ -116,9 +124,9 @@
 							</p>
 						</div>
 					</a>
-					<a href="">
+					<a href="./the-oyster-shell.html">
 						<img
-							src="./images/desktop/accomodation/cottages/the-oyster-shell/twoangels-seaside-accomodation-knysna-western-cape-oysters-shell.png"
+							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape-oysters-shell.jpg"
 							alt=""
 							class="accomodation-thumbnail"
 						/>
@@ -133,9 +141,9 @@
 							</p>
 						</div>
 					</a>
-					<a href="">
+					<a href="./lovers-nest.html">
 						<img
-							src="./images/desktop/accomodation/cottages/lovers-nest/twoangels-seaside-accomodation-knysna-western-cape-lovers-nest.png"
+							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape-lovers-nest.jpg"
 							alt=""
 							class="accomodation-thumbnail"
 						/>
@@ -153,7 +161,7 @@
 					</a>
 					<a href="">
 						<img
-							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape.png"
+							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape.jpg"
 							alt=""
 							class="accomodation-thumbnail"
 						/>
@@ -178,8 +186,10 @@
 				<img src="./icons/progress-indicators.svg" alt="" />
 			</aside>
 			<div>
-				<button class="primary-btn">Book your dream holiday</button>
-				<button class="secondary-btn">Get in touch...</button>
+				<button class="primary-btn">
+					<a href=""> Book your dream holiday</a>
+				</button>
+				<button class="secondary-btn"><a href=""> Get in touch...</a></button>
 			</div>
 			<section class="activities">
 				<!--I'm considering the possibility of this section being an aside instead?-->
@@ -202,17 +212,32 @@
 					integer vulputate. Elementum condimentum libero pharetra, massa metus,
 					convallis tempor, sagittis id.
 				</p>
-				<img src="./images/desktop/gallary/extras-01.png" alt="" />
+				<img src="./images/desktop/gallary/extras-01.jpg" alt="" />
 			</section>
 		</main>
 		<footer>
 			<address>
-				<a href="tel:+27&nbsp;082&nbsp;820&nbsp;9246">+27(0)82-820-9246</a>
-				<a href="bassecour.rd@mweb.co.za">bassecour.rd@mweb.co.za</a>
-				<a href="https://goo.gl/maps/r61P54Ai56ta5C7F7"
-					>1 George Rex Drive, The Heads, Knysna <br />Western Cape, South
-					Africa</a
-				>
+				<a href="tel:+27&nbsp;082&nbsp;820&nbsp;9246">
+					<span>
+						<img
+							class="footer-icon"
+							src="./icons/phone-icon.svg"
+							alt=""
+						/>+27(0)82-820-9246
+					</span>
+				</a>
+				<a href="bassecour.rd@mweb.co.za">
+					<span>
+						<img src="./icons/e-mail-icon.svg" alt="" />
+						bassecour.rd@mweb.co.za
+					</span>
+				</a>
+				<a href="https://goo.gl/maps/r61P54Ai56ta5C7F7">
+					<span>
+						<img src="./icons/location-icon.svg" alt="" /> 1 George Rex Drive,
+						The Heads, Knysna <br />Western Cape, South Africa
+					</span>
+				</a>
 			</address>
 			<div>
 				<img src="./icons/logo-footer.svg" alt="" class="logo" />

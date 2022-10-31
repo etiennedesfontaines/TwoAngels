@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -27,12 +29,14 @@ h3 {
 }
 h4 {
 	font-size: 3.2rem;
-	padding: 3.2rem;
+	padding-bottom: 2.4rem;
 }
 p,
 li,
 button,
-a {
+a,
+input,
+textarea {
 	font-family: "Roboto", sans-serif;
 	font-size: 1.8rem;
 	font-weight: 400;
@@ -45,16 +49,23 @@ li {
 	color: $white;
 }
 button {
-	color: $dark-blue;
-	width: 26rem;
+	a {
+		color: $dark-blue;
+	}
+	width: 25.6rem;
 	height: 4.8rem;
 	border: none;
 	border-radius: 0.8rem;
-	@include drop-shadow-2dp();
+	@include elevation-2dp();
 }
 
 .primary-btn {
+	a {
+		color: $white;
+	}
 	background-color: $dark-blue;
-	color: $white;
 	margin-right: 4.8rem;
+}
+small {
+	font-size: 1.6rem;
 }

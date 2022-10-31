@@ -1,0 +1,103 @@
+#contact {
+	margin: 12.8rem $spacing-extra-large 0rem $spacing-extra-large;
+	text-align: center;
+	h2 {
+		margin-bottom: $spacing-medium;
+	}
+
+	p + div {
+		position: relative;
+		margin-top: $spacing-medium;
+		background-image: url(../images/desktop/background/contact-form-image.jpg);
+		background-size: cover;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+	p + div > div {
+		position: absolute;
+		inset: 0;
+		z-index: 2;
+		background-image: linear-gradient(
+			to top,
+			rgba(27, 44, 140, 1),
+			rgba(27, 44, 140, 0.7) 50%
+		);
+		mask-image: linear-gradient(
+			to left,
+			transparent,
+			rgba(0, 0, 0, 0.6) 50%,
+			rgba(0, 0, 0, 1) 100%
+		);
+	}
+	form {
+		position: relative;
+		z-index: 3;
+		display: flex;
+		flex-direction: column;
+		gap: $spacing-medium;
+		padding: $spacing-medium;
+	}
+	label {
+		border-radius: 8px;
+		overflow: hidden;
+	}
+	input,
+	textarea {
+		width: 100%;
+		border: none;
+		padding: 1rem;
+	}
+
+	div {
+		text-align: left;
+		color: $white;
+
+		h3 {
+			font-family: "Roboto", sans-serif;
+			font-size: 2rem;
+			font-weight: bold;
+			text-align: left;
+			color: $white;
+			margin: 0;
+		}
+		p {
+			padding: $spacing-extra-small 0rem $spacing-extra-small 0rem;
+
+			a {
+				text-decoration: underline;
+			}
+		}
+		label[for="privacy-policy"] {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.8rem;
+			cursor: pointer;
+			font-size: 1.6rem;
+			input {
+				all: revert;
+				width: 2.4rem;
+				height: 2.4rem;
+			}
+		}
+	}
+
+	div + div {
+		display: flex;
+		align-items: center;
+
+		span {
+			display: flex;
+			align-items: center;
+			gap: $spacing-extra-small;
+		}
+		input {
+			width: revert;
+			border-radius: 8px;
+			background: $white;
+			color: $dark-blue;
+			margin-right: $spacing-medium;
+			padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+			cursor: pointer;
+		}
+	}
+}

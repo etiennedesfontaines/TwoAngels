@@ -3,7 +3,9 @@ footer {
 	background-image: url(../icons/angels-bg-footer-01.svg);
 	background-size: cover;
 	color: $white;
-	padding: 3.6rem 12rem 4.8rem 12rem;
+	padding: $spacing-small $spacing-extra-large $spacing-medium
+		$spacing-extra-large;
+	margin-top: $spacing-large;
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	div,
@@ -19,23 +21,34 @@ footer {
 		flex-direction: column;
 		align-items: center;
 		img {
-			padding-bottom: 2.4rem;
+			padding-bottom: $spacing-extra-small;
 		}
 		small,
 		small a {
 			all: revert;
 			color: white;
-			font-size: 1.2rem;
+			font-size: $base-unit;
 			padding-bottom: 1.2rem;
+			text-decoration: none;
 		}
 	}
 	address:first-child,
 	div:last-child {
 		//first and last columns
-		padding: 2.4rem 0rem 0rem 0rem;
+		padding: $spacing-extra-small 0rem 0rem 0rem;
+
 		p,
 		a {
-			padding: 0rem 0rem 2.4rem 0rem;
+			padding: 0rem 0rem $spacing-extra-small 0rem;
+
+			span {
+				display: flex;
+				align-items: center;
+				gap: $spacing-extra-small;
+			}
 		}
+	}
+	div:last-child a {
+		text-decoration: underline;
 	}
 }

@@ -1,6 +1,24 @@
+//colour:
 $dark-blue: #1b2c8c;
 $sky-blue: #5cbbfc;
 $charcoal: #2c2d32;
 $white: white;
 $red: #b3001b;
 $green: #376415;
+
+//spacing:
+$spacing-extra-large: 24rem;
+$spacing-large: 9.6rem;
+$spacing-medium: 4.8rem;
+$spacing-small: 3.8rem;
+$spacing-extra-small: 2.4rem;
+$base-unit: 0.8rem;
+$half-unit: 0.4rem;
+
+$border-radius: 8px;
+
+//fonts
+
+// @media screen and (max-width: 1680px) {
+// 	$spacing-extra-large: 12rem;
+// }
