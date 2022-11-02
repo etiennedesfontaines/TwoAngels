@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--All metadata for SEO purposes still needs to be addressed-->
+		<!--This includes writing a useful title, content and description etc-->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/styles/style.css" />
+		<script src="/app.js" defer></script>
+		<title>Contact</title>
+	</head>
+	<header>
+		<h1>
+			<a href="/index.html" title="Home page">
+				<img src="icons/logo.svg" alt="TwoAngels Logo" />
+			</a>
+		</h1>
+
+		<nav>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li class="dropdown">
+					Suites and Cottages
+					<img src="./icons/chevron-down.svg" alt="chev" />
+
+					<nav id="nav-dropdown">
+						<ul>
+							<li><a href="./luxury-suite.html">Luxury Suite</a></li>
+							<li><a href="./family-suite.html">Family Suite</a></li>
+							<li><a href="./the-angels-lair.html">The Angel's Lair</a></li>
+							<li><a href="./the-oyster-shell.html">The Oyster Shell</a></li>
+							<li><a href="./lovers-nest.html">Lovers Nest</a></li>
+							<li><a href="./main-house.html">Main House</a></li>
+						</ul>
+					</nav>
+				</li>
+				<li><a href="./activities.html">Activities</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+				<li>
+					<a href="https://book.nightsbridge.com/15693" target="_blank"
+						>Book Now</a
+					>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<body>
+		<main id="contact">
+			<h2>Contact Us</h2>
+			<p>
+				If you have any questions about TwoAngels and what we offer, please feel
+				free to give us a call or send us a message.
+			</p>
+			<div>
+				<div></div>
+				<form action="">
+					<label for="name">
+						<input
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Name"
+							required
+						/>
+					</label>
+					<label for="email">
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Email"
+							required
+						/>
+					</label>
+					<label for="tel">
+						<input
+							type="tel"
+							id="tel"
+							name="tel"
+							placeholder="Contact Number"
+						/>
+					</label>
+					<label for="message">
+						<textarea
+							name="message"
+							id="message"
+							cols="20"
+							rows="1"
+							placeholder="Message"
+						></textarea>
+					</label>
+					<div>
+						<h3>Privacy Policy:</h3>
+						<p><a href=""> Click here</a> to read our privacy policy.</p>
+						<label for="privacy-policy">
+							<input
+								type="checkbox"
+								id="privacy-policy"
+								name="privacy-policy"
+								value="I agree to the processing of my personal data"
+								required
+							/>
+
+							I have read the privacy policy and I give consent to the
+							processing of my personal data.
+						</label>
+					</div>
+					<div>
+						<input type="submit" value="Submit" />
+						<a href="tel:+27&nbsp;082&nbsp;820&nbsp;9246">
+							<span>
+								<img
+									class="footer-icon"
+									src="./icons/phone-icon.svg"
+									alt=""
+								/>+27(0)82-820-9246
+							</span>
+						</a>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer>
+			<address>
+				<a href="tel:+27&nbsp;082&nbsp;820&nbsp;9246">
+					<span>
+						<img
+							class="footer-icon"
+							src="./icons/phone-icon.svg"
+							alt=""
+						/>+27(0)82-820-9246
+					</span>
+				</a>
+				<a href="bassecour.rd@mweb.co.za">
+					<span>
+						<img src="./icons/e-mail-icon.svg" alt="" />
+						bassecour.rd@mweb.co.za
+					</span>
+				</a>
+				<a href="https://goo.gl/maps/r61P54Ai56ta5C7F7">
+					<span>
+						<img src="./icons/location-icon.svg" alt="" /> 1 George Rex Drive,
+						The Heads, Knysna <br />Western Cape, South Africa
+					</span>
+				</a>
+			</address>
+			<div>
+				<img src="./icons/logo-footer.svg" alt="" class="logo" />
+				<small>© 2022 TwoAngels (Pty) Ltd. All rights reserved.</small>
+				<small><a href="">Privacy policy</a></small>
+				<small><a href="">Sitemap</a></small>
+			</div>
+			<div>
+				<p>
+					“I enjoyed my stay so much that I extended it form one week to a
+					month! 10/10”<br />
+					-Trip Advisor
+				</p>
+				<p>If you have any questions, <a href="#">get in touch.</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
