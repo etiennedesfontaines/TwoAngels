@@ -1,0 +1,33 @@
+//laptop
+@media screen and (max-width: 1680px) {
+	.nav-bar__content {
+		padding: 0rem $spacing-xxl 0rem $spacing-xxl;
+	}
+	.hero-section__content {
+		top: $spacing-xxl;
+		left: $spacing-xxl;
+	}
+	.suites-and-cottages-section,
+	.testimonials {
+		margin: 0rem $spacing-xxl $spacing-xl $spacing-xxl;
+	}
+	.activities-section {
+		margin: 0rem $spacing-xxl 0rem $spacing-xxl;
+	}
+	.accommodation-page,
+	.activities-page,
+	.contact-page {
+		margin: 12.8rem $spacing-xxl 0rem $spacing-xxl;
+	}
+
+	.footer {
+		padding: $spacing-s $spacing-xxl $spacing-l $spacing-xxl;
+	}
+}
+//tablet
+// @media screen and (max-width: 820px) {
+// }
+//phone
+// @media screen and (max-width: 412px) {
+
+// }
