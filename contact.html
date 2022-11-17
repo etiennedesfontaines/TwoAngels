@@ -13,56 +13,25 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/styles/style.css" />
-		<script src="/app.js" defer></script>
+		<script src="./custom-html-elements/navBar.js" defer></script>
+		<script src="./page-scripts/contactPage.js"></script>
+		<script src="./custom-html-elements/customFooter.js" defer></script>
 		<title>Contact</title>
 	</head>
-	<header>
-		<h1>
-			<a href="/index.html" title="Home page">
-				<img src="icons/logo.svg" alt="TwoAngels Logo" />
-			</a>
-		</h1>
-
-		<nav>
-			<ul>
-				<li><a href="./index.html">Home</a></li>
-				<li class="dropdown">
-					Suites and Cottages
-					<img src="./icons/chevron-down.svg" alt="chev" />
-
-					<nav id="nav-dropdown">
-						<ul>
-							<li><a href="./luxury-suite.html">Luxury Suite</a></li>
-							<li><a href="./family-suite.html">Family Suite</a></li>
-							<li><a href="./the-angels-lair.html">The Angel's Lair</a></li>
-							<li><a href="./the-oyster-shell.html">The Oyster Shell</a></li>
-							<li><a href="./lovers-nest.html">Lovers Nest</a></li>
-							<li><a href="./main-house.html">Main House</a></li>
-						</ul>
-					</nav>
-				</li>
-				<li><a href="./activities.html">Activities</a></li>
-				<li><a href="./contact.html">Contact</a></li>
-				<li>
-					<a href="https://book.nightsbridge.com/15693" target="_blank"
-						>Book Now</a
-					>
-				</li>
-			</ul>
-		</nav>
-	</header>
+	<nav-bar></nav-bar>
 	<body>
-		<main id="contact">
+		<main class="contact-page">
 			<h2>Contact Us</h2>
 			<p>
 				If you have any questions about TwoAngels and what we offer, please feel
 				free to give us a call or send us a message.
 			</p>
-			<div>
-				<div></div>
-				<form action="">
-					<label for="name">
+			<div class="contact-page__form-wrapper">
+				<div class="contact-page__form-background-gradient"></div>
+				<form class="contact-form contact-page__contact-form" action="">
+					<label class="contact-form__input-label" for="name">
 						<input
+							class="contact-form__input"
 							type="text"
 							id="name"
 							name="name"
@@ -70,8 +39,9 @@
 							required
 						/>
 					</label>
-					<label for="email">
+					<label class="contact-form__input-label" for="email">
 						<input
+							class="contact-form__input"
 							type="email"
 							id="email"
 							name="email"
@@ -79,16 +49,18 @@
 							required
 						/>
 					</label>
-					<label for="tel">
+					<label class="contact-form__input-label" for="tel">
 						<input
+							class="contact-form__input"
 							type="tel"
 							id="tel"
 							name="tel"
 							placeholder="Contact Number"
 						/>
 					</label>
-					<label for="message">
+					<label class="contact-form__input-label" for="message">
 						<textarea
+							class="contact-form__input"
 							name="message"
 							id="message"
 							cols="20"
@@ -96,11 +68,19 @@
 							placeholder="Message"
 						></textarea>
 					</label>
-					<div>
-						<h3>Privacy Policy:</h3>
-						<p><a href=""> Click here</a> to read our privacy policy.</p>
-						<label for="privacy-policy">
+					<div class="contact-form__privacy-policy-wrapper">
+						<h3 class="contact-form__privacy-policy-heading">
+							Privacy Policy:
+						</h3>
+						<p class="contact-form__privacy-policy-description">
+							<a class="contact-form__privacy-policy-link" href="">
+								Click here</a
+							>
+							to read our privacy policy.
+						</p>
+						<label class="contact-form__input-label" for="privacy-policy">
 							<input
+								class="contact-form__input"
 								type="checkbox"
 								id="privacy-policy"
 								name="privacy-policy"
@@ -112,59 +92,27 @@
 							processing of my personal data.
 						</label>
 					</div>
-					<div>
-						<input type="submit" value="Submit" />
-						<a href="tel:+27&nbsp;082&nbsp;820&nbsp;9246">
-							<span>
-								<img
-									class="footer-icon"
-									src="./icons/phone-icon.svg"
-									alt=""
-								/>+27(0)82-820-9246
-							</span>
-						</a>
+					<div class="contact-form__last-row">
+						<input
+							class="contact-form__submission-button"
+							type="submit"
+							value="Submit"
+						/>
+						<address>
+							<a href="tel:+27&nbsp;082&nbsp;820&nbsp;9246">
+								<span class="contact-info__content">
+									<img
+										class="footer-icon"
+										src="./icons/phone-icon.svg"
+										alt=""
+									/>+27(0)82-820-9246
+								</span>
+							</a>
+						</address>
 					</div>
 				</form>
 			</div>
 		</main>
-		<footer>
-			<address>
-				<a href="tel:+27&nbsp;082&nbsp;820&nbsp;9246">
-					<span>
-						<img
-							class="footer-icon"
-							src="./icons/phone-icon.svg"
-							alt=""
-						/>+27(0)82-820-9246
-					</span>
-				</a>
-				<a href="bassecour.rd@mweb.co.za">
-					<span>
-						<img src="./icons/e-mail-icon.svg" alt="" />
-						bassecour.rd@mweb.co.za
-					</span>
-				</a>
-				<a href="https://goo.gl/maps/r61P54Ai56ta5C7F7">
-					<span>
-						<img src="./icons/location-icon.svg" alt="" /> 1 George Rex Drive,
-						The Heads, Knysna <br />Western Cape, South Africa
-					</span>
-				</a>
-			</address>
-			<div>
-				<img src="./icons/logo-footer.svg" alt="" class="logo" />
-				<small>© 2022 TwoAngels (Pty) Ltd. All rights reserved.</small>
-				<small><a href="">Privacy policy</a></small>
-				<small><a href="">Sitemap</a></small>
-			</div>
-			<div>
-				<p>
-					“I enjoyed my stay so much that I extended it form one week to a
-					month! 10/10”<br />
-					-Trip Advisor
-				</p>
-				<p>If you have any questions, <a href="#">get in touch.</a></p>
-			</div>
-		</footer>
+		<custom-footer></custom-footer>
 	</body>
 </html>

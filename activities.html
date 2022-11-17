@@ -13,49 +13,16 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/styles/style.css" />
-		<script src="/app.js" defer></script>
+		<script src="./custom-html-elements/navBar.js" defer></script>
+		<script src="./custom-html-elements/customFooter.js" defer></script>
 		<title>Activities</title>
 	</head>
 	<body>
-		<header>
-			<h1>
-				<a href="/index.html" title="Home page">
-					<img src="icons/logo.svg" alt="TwoAngels Logo" />
-				</a>
-			</h1>
-
-			<nav>
-				<ul>
-					<li><a href="./index.html">Home</a></li>
-					<li class="dropdown">
-						Suites and Cottages
-						<img src="./icons/chevron-down.svg" alt="chev" />
-
-						<nav id="nav-dropdown">
-							<ul>
-								<li><a href="./luxury-suite.html">Luxury Suite</a></li>
-								<li><a href="./family-suite.html">Family Suite</a></li>
-								<li><a href="./the-angels-lair.html">The Angel's Lair</a></li>
-								<li><a href="./the-oyster-shell.html">The Oyster Shell</a></li>
-								<li><a href="./lovers-nest.html">Lovers Nest</a></li>
-								<li><a href="./main-house.html">Main House</a></li>
-							</ul>
-						</nav>
-					</li>
-					<li><a href="./activities.html">Activities</a></li>
-					<li><a href="./contact.html">Contact</a></li>
-					<li>
-						<a href="https://book.nightsbridge.com/15693" target="_blank"
-							>Book Now</a
-						>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<main id="activities">
-			<section class="activity">
+		<nav-bar></nav-bar>
+		<main class="activities-page">
+			<section class="activities-page__section">
 				<h2>Activities</h2>
-				<p>
+				<p class="activities-page__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
 					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
 					Nisl ornare pulvinar sit euismod. Consequat varius mollis purus
@@ -66,11 +33,15 @@
 					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
 					eleifend tortor justo. Praesent senectus pharetra sapien non.
 				</p>
-				<img src="./images/desktop/gallary/extras-01.jpg" alt="" />
+				<img
+					class="activities-page__image"
+					src="./images/desktop/gallary/extras-01.jpg"
+					alt=""
+				/>
 			</section>
-			<section class="activity">
+			<section class="activities-page__section">
 				<h2>Activities</h2>
-				<p>
+				<p class="activities-page__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
 					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
 					Nisl ornare pulvinar sit euismod. Consequat varius mollis purus
@@ -81,11 +52,15 @@
 					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
 					eleifend tortor justo. Praesent senectus pharetra sapien non.
 				</p>
-				<img src="./images/desktop/gallary/extras-01.jpg" alt="" />
+				<img
+					class="activities-page__image"
+					src="./images/desktop/gallary/extras-01.jpg"
+					alt=""
+				/>
 			</section>
-			<section class="activity">
+			<section class="activities-page__section">
 				<h2>Activities</h2>
-				<p>
+				<p class="activities-page__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
 					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
 					Nisl ornare pulvinar sit euismod. Consequat varius mollis purus
@@ -96,11 +71,15 @@
 					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
 					eleifend tortor justo. Praesent senectus pharetra sapien non.
 				</p>
-				<img src="./images/desktop/gallary/extras-01.jpg" alt="" />
+				<img
+					class="activities-page__image"
+					src="./images/desktop/gallary/extras-01.jpg"
+					alt=""
+				/>
 			</section>
-			<section class="activity">
+			<section class="activities-page__section">
 				<h2>Activities</h2>
-				<p>
+				<p class="activities-page__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
 					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
 					Nisl ornare pulvinar sit euismod. Consequat varius mollis purus
@@ -111,47 +90,13 @@
 					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
 					eleifend tortor justo. Praesent senectus pharetra sapien non.
 				</p>
-				<img src="./images/desktop/gallary/extras-01.jpg" alt="" />
+				<img
+					class="activities-page__image"
+					src="./images/desktop/gallary/extras-01.jpg"
+					alt=""
+				/>
 			</section>
 		</main>
-		<footer>
-			<address>
-				<a href="tel:+27&nbsp;082&nbsp;820&nbsp;9246">
-					<span>
-						<img
-							class="footer-icon"
-							src="./icons/phone-icon.svg"
-							alt=""
-						/>+27(0)82-820-9246
-					</span>
-				</a>
-				<a href="bassecour.rd@mweb.co.za">
-					<span>
-						<img src="./icons/e-mail-icon.svg" alt="" />
-						bassecour.rd@mweb.co.za
-					</span>
-				</a>
-				<a href="https://goo.gl/maps/r61P54Ai56ta5C7F7">
-					<span>
-						<img src="./icons/location-icon.svg" alt="" /> 1 George Rex Drive,
-						The Heads, Knysna <br />Western Cape, South Africa
-					</span>
-				</a>
-			</address>
-			<div>
-				<img src="./icons/logo-footer.svg" alt="" class="logo" />
-				<small>© 2022 TwoAngels (Pty) Ltd. All rights reserved.</small>
-				<small><a href="">Privacy policy</a></small>
-				<small><a href="">Sitemap</a></small>
-			</div>
-			<div>
-				<p>
-					“I enjoyed my stay so much that I extended it form one week to a
-					month! 10/10”<br />
-					-Trip Advisor
-				</p>
-				<p>If you have any questions, <a href="#">get in touch.</a></p>
-			</div>
-		</footer>
+		<custom-footer></custom-footer>
 	</body>
 </html>

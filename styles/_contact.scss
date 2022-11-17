@@ -1,19 +1,17 @@
-#contact {
-	margin: 12.8rem $spacing-extra-large 0rem $spacing-extra-large;
+.contact-page {
+	margin: 12.8rem $spacing-xxxl 0rem $spacing-xxxl;
 	text-align: center;
-	h2 {
-		margin-bottom: $spacing-medium;
-	}
 
-	p + div {
+	&__form-wrapper {
 		position: relative;
-		margin-top: $spacing-medium;
+		margin-top: $spacing-l;
 		background-image: url(../images/desktop/background/contact-form-image.jpg);
 		background-size: cover;
 		border-radius: 8px;
 		overflow: hidden;
+		@include elevation-1dp;
 	}
-	p + div > div {
+	&__form-background-gradient {
 		position: absolute;
 		inset: 0;
 		z-index: 2;
@@ -29,75 +27,71 @@
 			rgba(0, 0, 0, 1) 100%
 		);
 	}
-	form {
-		position: relative;
-		z-index: 3;
-		display: flex;
-		flex-direction: column;
-		gap: $spacing-medium;
-		padding: $spacing-medium;
-	}
-	label {
+}
+.contact-form {
+	position: relative;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	gap: $spacing-l;
+	padding: $spacing-l;
+
+	&__input-label {
 		border-radius: 8px;
 		overflow: hidden;
-	}
-	input,
-	textarea {
-		width: 100%;
-		border: none;
-		padding: 1rem;
-	}
+		@include elevation-1dp;
 
-	div {
-		text-align: left;
-		color: $white;
-
-		h3 {
-			font-family: "Roboto", sans-serif;
-			font-size: 2rem;
-			font-weight: bold;
-			text-align: left;
-			color: $white;
-			margin: 0;
-		}
-		p {
-			padding: $spacing-extra-small 0rem $spacing-extra-small 0rem;
-
-			a {
-				text-decoration: underline;
-			}
-		}
-		label[for="privacy-policy"] {
+		&[for="privacy-policy"] {
 			display: inline-flex;
 			align-items: center;
 			gap: 0.8rem;
 			cursor: pointer;
 			font-size: 1.6rem;
-			input {
-				all: revert;
-				width: 2.4rem;
-				height: 2.4rem;
-			}
 		}
 	}
+	&__input {
+		width: 100%;
+		border: none;
+		padding: 1rem;
 
-	div + div {
+		&[name="privacy-policy"] {
+			all: revert;
+			width: 2.4rem;
+			height: 2.4rem;
+		}
+	}
+	&__privacy-policy-wrapper {
+		text-align: left;
+		color: $white;
+	}
+	&__privacy-policy-heading {
+		font-family: "Roboto", sans-serif;
+		font-size: 2rem;
+		font-weight: bold;
+		text-align: left;
+		color: $white;
+		margin: 0;
+		padding: 0;
+	}
+	&__privacy-policy-description {
+		padding: $spacing-xs 0rem $spacing-xs 0rem;
+	}
+	&__privacy-policy-link {
+		text-decoration: underline;
+	}
+	&__last-row {
 		display: flex;
 		align-items: center;
-
-		span {
-			display: flex;
-			align-items: center;
-			gap: $spacing-extra-small;
-		}
-		input {
-			width: revert;
-			border-radius: 8px;
-			background: $white;
-			color: $dark-blue;
-			margin-right: $spacing-medium;
-			padding: 0.8rem 1.6rem 0.8rem 1.6rem;
-			cursor: pointer;
-		}
+	}
+	&__submission-button {
+		width: revert;
+		border-radius: 8px;
+		border: none;
+		background: $white;
+		color: $dark-blue;
+		margin-right: $spacing-l;
+		padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+		cursor: pointer;
+		@include elevation-2dp();
 	}
 }

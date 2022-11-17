@@ -1,0 +1,136 @@
+.accommodation-page {
+	margin: 12.8rem $spacing-xxxl 0rem $spacing-xxxl;
+	text-align: center;
+
+	&__section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: $spacing-xl;
+
+		.buttons {
+			margin: $spacing-l 0rem 0rem 0rem;
+		}
+	}
+
+	&__description {
+		max-width: $measure-body-copy;
+	}
+
+	&__icon-list {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__icon-list-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__icon {
+		width: 4.8rem;
+		height: auto;
+	}
+	&__icon-description {
+		color: $charcoal;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.image-carousel {
+	width: 100%;
+	@include elevation-1dp;
+
+	&__slide-display-window {
+		position: relative;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		margin: $spacing-l 0rem $spacing-xs 0rem;
+	}
+
+	&__slides {
+		display: grid;
+	}
+	&__slide {
+		grid-area: 1 / 1 /2 /2;
+		list-style: none;
+		opacity: 0;
+		transition: 200ms opacity ease-in-out;
+		transition-delay: 200ms;
+
+		&[data-active] {
+			opacity: 1;
+			transition-delay: 0ms;
+			z-index: 1;
+		}
+	}
+	&__image {
+		display: block;
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+
+	&__button {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 100%;
+		border: none;
+		background: none;
+		text-align: center;
+		filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg)
+			brightness(103%) contrast(101%);
+		opacity: 0.5;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 1;
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+		&:focus {
+			border: none;
+		}
+
+		&--prev {
+			left: 1rem;
+		}
+		&--next {
+			right: 1rem;
+		}
+	}
+
+	&__progress-indicators {
+		display: flex;
+		justify-content: center;
+		margin-bottom: $spacing-l;
+	}
+	&__progress-indicator {
+		all: revert;
+		list-style: none;
+		color: $dark-blue;
+		background: white;
+		font-size: 1.6rem;
+		border: 1.6px solid $dark-blue;
+		border-radius: 100%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		//This height and width break my 8px rule.
+		width: 2.4rem;
+		height: 2.4rem;
+		margin: 0rem $base-unit 0rem $base-unit;
+		cursor: pointer;
+		@include elevation-1dp;
+
+		&[data-active] {
+			background: $dark-blue;
+			color: $white;
+		}
+	}
+}

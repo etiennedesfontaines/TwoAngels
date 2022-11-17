@@ -13,190 +13,103 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/styles/style.css" />
-		<script src="/app.js" defer></script>
+		<script src="./custom-html-elements/navBar.js" defer></script>
+		<script src="./page-scripts/homePage.js" defer></script>
+		<script src="./custom-html-elements/customFooter.js" defer></script>
 		<title>TwoAngels</title>
 	</head>
 	<body>
-		<header>
-			<h1>
-				<a href="/index.html" title="Home page">
-					<img src="icons/logo.svg" alt="TwoAngels Logo" />
-				</a>
-			</h1>
-			<nav>
-				<ul>
-					<li><a href="./index.html">Home</a></li>
-					<li class="dropdown">
-						Suites and Cottages
-						<img src="./icons/chevron-down.svg" alt="chev" />
-
-						<nav id="nav-dropdown">
-							<ul>
-								<li><a href="./luxury-suite.html">Luxury Suite</a></li>
-								<li><a href="./family-suite.html">Family Suite</a></li>
-								<li><a href="./the-angels-lair.html">The Angel's Lair</a></li>
-								<li><a href="./the-oyster-shell.html">The Oyster Shell</a></li>
-								<li><a href="./lovers-nest.html">Lovers Nest</a></li>
-								<li><a href="./main-house.html">Main House</a></li>
-							</ul>
-						</nav>
-					</li>
-					<li><a href="./activities.html">Activities</a></li>
-					<li><a href="./contact.html">Contact</a></li>
-					<li>
-						<a href="https://book.nightsbridge.com/15693" target="_blank"
-							>Book Now</a
-						>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<nav-bar class="nav-bar"></nav-bar>
 		<main>
-			<section id="hero">
-				<div></div>
-				<header>
-					<h2>TwoAngels</h2>
-					<h3>Water's Edge Guest House and Cottages</h3>
-					<button class="primary-btn">
-						<a href="https://book.nightsbridge.com/15693" target="_blank">
-							Book your dream holiday</a
-						>
-					</button>
-					<button class="secondary-btn">
-						<!--How do I make this button auto scroll page to accomodation?-->
-						<a href=""> Browse Accomodation...</a>
-					</button>
+			<section class="hero-section">
+				<div class="hero-section__background-gradient"></div>
+				<header class="hero-section__content">
+					<h2 class="hero-section__heading">TwoAngels</h2>
+					<h3 class="hero-section__subheading">
+						Water's Edge Guest House and Cottages
+					</h3>
+					<div class="buttons">
+						<button class="button button--primary">
+							<a
+								class="button__link button__link--primary"
+								href="https://book.nightsbridge.com/15693"
+								target="_blank"
+							>
+								Book your dream holiday</a
+							>
+						</button>
+						<button class="button">
+							<a class="button__link" href="#suites-and-cottages">
+								Browse Accomodation...</a
+							>
+						</button>
+					</div>
 				</header>
 			</section>
-			<section id="suites-and-cottages">
+			<section class="suites-and-cottages-section" id="suites-and-cottages">
 				<h3>Suites and Cottages</h3>
-				<div>
-					<a href="./luxury-suite.html">
-						<img
-							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape-luxury-suite.jpg"
-							alt=""
-							class="accomodation-thumbnail"
-						/>
-						<div>
-							<h4>Luxury Suite</h4>
-							<p>
-								Comfort envelops you... <br />Luxury Suite is your enchanting
-								holiday for eight.<br />
-								Bronze yourself in the golden summer sun, while relaxing in the
-								deck chairs on your private, sea-facing balcony. Or treat your
-								friends and family to a tantalizing meal, prepared in your state
-								of the art kitchen.
-							</p>
-						</div>
-					</a>
-					<a href="./family-suite.html">
-						<img
-							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape-family-suite.jpg"
-							alt=""
-							class="accomodation-thumbnail"
-						/>
-						<div>
-							<h4>Family Suite</h4>
-							<p>
-								Breathtaking beauty is on your doorstep…<br />
-								Family Suite is your unforgettable holiday for six.<br />
-								Savor magnificent sunsets right from your dining room table. Or
-								sink into the comfort of your private daybed and indulge in a
-								book, while listening to your children laughing and playing
-								safely on the beach below.
-							</p>
-						</div>
-					</a>
-					<a href="./the-angels-lair.html">
-						<img
-							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape-angels-lair.jpg"
-							alt=""
-							class="accomodation-thumbnail"
-						/>
-						<div>
-							<h4>The Angel's Lair</h4>
-							<p>
-								Serenity surrounds you…<br />
-								The Angel's Lair is your family break for four.<br />Treat your
-								loved ones to a paradise whose privacy is uniquely created by
-								nature. Soothe your soul to the sound of the sea rolling in. And
-								share a restful afternoon gazing over the lagoon from the
-								comfort of your private daybed.
-							</p>
-						</div>
-					</a>
-					<a href="./the-oyster-shell.html">
-						<img
-							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape-oysters-shell.jpg"
-							alt=""
-							class="accomodation-thumbnail"
-						/>
-						<div>
-							<h4>The Oyster's Shell</h4>
-							<p>
-								Relaxation is in the air…<br />
-								The Oyster Shell is your healing escape for two.<br />
-								Watch stunning sunsets from the comfort of your secluded daybed.
-								Braai in the charming intimacy of your private balcony. And
-								savour the infinite beauty of uninterrupted lagoon views.
-							</p>
-						</div>
-					</a>
-					<a href="./lovers-nest.html">
-						<img
-							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape-lovers-nest.jpg"
-							alt=""
-							class="accomodation-thumbnail"
-						/>
-						<div>
-							<h4>Lover's Nest</h4>
-							<p>
-								Romance awaits you...<br />
-								Lover's nest is your intimate getaway for two.<br />
-								Cozy up to the enchanting glow of your fireplace in winter. Bask
-								in the sublime sunshine on your private balcony in summer. And
-								wake up, all year round, to the most breathtaking view of the
-								tidal lagoon.
-							</p>
-						</div>
-					</a>
-					<a href="">
-						<img
-							src="./images/desktop/accomodation/twoangels-seaside-accomodation-knysna-western-cape.jpg"
-							alt=""
-							class="accomodation-thumbnail"
-						/>
-						<div>
-							<h4>Main House</h4>
-							<p>
-								Copy writing required...<br />
-								Describe the entire "villa" in atmosphere.<br />
-								Write enticing copy to encourage people to rent the entire
-								property for celebratory occassions etc etc etc
-							</p>
-						</div>
-					</a>
-				</div>
+				<div class="suites-and-cottages-section__card-container"></div>
 			</section>
-			<aside id="testimonials">
-				<img src="./icons/profile-icon.svg" alt="" />
-				<p>
-					“Incredible guest house with outstanding views. We thoroughly enjoyed
-					our stay”
-				</p>
-				<img src="./icons/progress-indicators.svg" alt="" />
+			<aside class="testimonials">
+				<ol class="testimonials__slides">
+					<li class="testimonials__slide" data-slide-position="0" data-active>
+						<img
+							class="testimonials__profile-image"
+							src="./icons/profile-icon.svg"
+							alt=""
+						/>
+						<img
+							class="testimonials__stars-image"
+							src="./icons/five-stars.svg"
+							alt=""
+						/>
+						<div class="testimonials__text-wrapper">
+							<q class="testimonials__quote">
+								Incredible guest house with outstanding views. We thoroughly
+								enjoyed our stay.
+							</q>
+							<p>- Guest Name, Trip Advisor</p>
+						</div>
+					</li>
+					<!-- <li class="testimonials__slide" data-slide-position="1">
+						<img
+							class="testimonials__profile-image"
+							src="./icons/profile-icon.svg"
+							alt=""
+						/>
+						<q class="testimonials__quote">
+							This place is nothing short of magical... Surreal almost. In our
+							opinion one of the most beautiful places of SA.
+						</q>
+					</li> -->
+				</ol>
+				<ol class="testimonials__progress-indicators">
+					<li
+						class="testimonials__progress-indicator"
+						data-indicator-position="0"
+						data-active
+					></li>
+					<li
+						class="testimonials__progress-indicator"
+						data-indicator-position="1"
+					></li>
+				</ol>
 			</aside>
-			<div>
-				<button class="primary-btn">
-					<a href="https://book.nightsbridge.com/15693" target="_blank">
+			<div class="buttons">
+				<button class="button button--primary">
+					<a
+						class="button__link button__link--primary"
+						href="https://book.nightsbridge.com/15693"
+						target="_blank"
+					>
 						Book your dream holiday</a
 					>
 				</button>
-				<button class="secondary-btn">
-					<a href="./contact.html"> Get in touch...</a>
+				<button class="button">
+					<a class="button__link" href="./contact.html"> Get in touch...</a>
 				</button>
 			</div>
-			<section class="activities">
+			<section class="activities-section">
 				<!--I'm considering the possibility of this section being an aside instead?-->
 				<!--an aside represents a portion of the document whose content is only indirectly
 					related to the main content of the document. Given that the documnets main purpose 
@@ -208,7 +121,7 @@
 				-->
 				<h3>Activities</h3>
 
-				<p>
+				<p class="activities-section__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque,
 					consectetur neque eros, id proin sed. Ac hendrerit venenatis at proin
 					nulla lectus. Arcu, orci pulvinar mauris amet pellentesque vitae
@@ -217,47 +130,13 @@
 					integer vulputate. Elementum condimentum libero pharetra, massa metus,
 					convallis tempor, sagittis id.
 				</p>
-				<img src="./images/desktop/gallary/extras-01.jpg" alt="" />
+				<img
+					class="activities-section__image"
+					src="./images/desktop/gallary/extras-01.jpg"
+					alt=""
+				/>
 			</section>
 		</main>
-		<footer>
-			<address>
-				<a href="tel:+27&nbsp;082&nbsp;820&nbsp;9246">
-					<span>
-						<img
-							class="footer-icon"
-							src="./icons/phone-icon.svg"
-							alt=""
-						/>+27(0)82-820-9246
-					</span>
-				</a>
-				<a href="bassecour.rd@mweb.co.za">
-					<span>
-						<img src="./icons/e-mail-icon.svg" alt="" />
-						bassecour.rd@mweb.co.za
-					</span>
-				</a>
-				<a href="https://goo.gl/maps/r61P54Ai56ta5C7F7">
-					<span>
-						<img src="./icons/location-icon.svg" alt="" /> 1 George Rex Drive,
-						The Heads, Knysna <br />Western Cape, South Africa
-					</span>
-				</a>
-			</address>
-			<div>
-				<img src="./icons/logo-footer.svg" alt="" class="logo" />
-				<small>© 2022 TwoAngels (Pty) Ltd. All rights reserved.</small>
-				<small><a href="">Privacy policy</a></small>
-				<small><a href="">Sitemap</a></small>
-			</div>
-			<div>
-				<p>
-					“I enjoyed my stay so much that I extended it form one week to a
-					month! 10/10”<br />
-					-Trip Advisor
-				</p>
-				<p>If you have any questions, <a href="#">get in touch.</a></p>
-			</div>
-		</footer>
+		<custom-footer></custom-footer>
 	</body>
 </html>
