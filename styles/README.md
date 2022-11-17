@@ -2,19 +2,25 @@
 
 ## To do:
 
+### houseKeeping
+
+- folder for HTML files and reroute all necessary file paths
+
 ### All Pages
 
-- Read BEM documentation and correct current implementation
-- BEM naming (readability) and related CSS adjustments
 - Responsiveness (laptop, tablet, mobile) (Mobile carousel swipable)
 - Copywriting - Copy for Sans park hiking trails https://www.sanparks.org/parks/garden_route/tourism/activities/hiking_nature_walks.php
-- Restricting orphen characters if needed after copy is in... - Drop shadows on all interactable elements (check material guide)
+
 - HTML head (SEO necessaries) - Image alt text - Accessibility aria lables etc
 - CSS refactor (mixins and variables to reduce repetition)
+- Hover state for all buttons and nav elements to improve UI
+- Background texture rather than plain white?
+- Background off white rather than plain white?
 
 ### Activities Page
 
 - awaiting image responses from prospective parties... - Implement images
+- Should there be a cta at the end of the activities page?
 
 ### Images
 
@@ -23,13 +29,22 @@
 ### Home Page
 
 - Hero Section Design (Solve for banner and implement)
-- Hero section secondary btn
-- scroll to accom selection
-- Testimonial carousel - Testimoninal source reference?
+
+- Testimonial carousel - Testimoninal redesign to include stars and source of review...
+- Testimonials - possible to use from trip advisor without their widget?
+- Testimonial customer permission to use head shot?
+- Activities image - should this image not rather be same height as the suites and cottages images above, just longer, landscape ie a panoramic shot?
+- Does page content only render when in the vp? I am experiencing delayed loading of home page content when it is scrolled out of and back into view. I gather this will be reduced with optimisation. Will optimise images first.
 
 ### Accomodation pages
 
 - Square meterage for each
+- Pet friendly icon to relevant rooms
+- Image Carousel - focus and hover need different styles
+- Will likely need web components for image carousels - mobile vs desktop
+- Hover for image carousel progress indicators
+- Repopulate all acc pages aside from luxury
+- create and populate full house page
 
 ### Contact Page
 
@@ -39,8 +54,19 @@
 
 ### Nav Bar
 
+- mobile nav (hamburger menu)
 - location signifiers
 - Suite naming (Angel's lair)
+- Check elevation with Lau and Bash
+- dropdown - dead space just beneath copy that causes dropdown to close
+- TabIndex for all nav items?
+- How to cause dropdown when tabbed to?
+- Dead zone on laptop dropdown causing it to close
+
+### Footer
+
+- Location link needs to open in new tab
+- Check other links too
 
 ### Other
 

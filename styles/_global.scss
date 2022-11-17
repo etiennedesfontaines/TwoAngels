@@ -20,16 +20,15 @@ h4 {
 	text-align: center;
 }
 
-h2 {
-	font-size: 4.8rem;
-}
+h2,
 h3 {
 	font-size: 4.8rem;
-	margin-bottom: 4.8rem;
+	padding-bottom: $spacing-l;
 }
+
 h4 {
 	font-size: 3.2rem;
-	padding-bottom: 2.4rem;
+	padding-bottom: $spacing-m;
 }
 p,
 li,
@@ -37,10 +36,10 @@ button,
 a,
 input,
 textarea {
-	font-family: "Roboto", sans-serif;
 	font-size: 1.8rem;
 	font-weight: 400;
-	line-height: 3rem;
+	//The line height below is the equivalent to 160%
+	line-height: 1.6;
 }
 
 a,
@@ -48,8 +47,29 @@ li {
 	text-decoration: none;
 	color: $white;
 }
-button {
-	a {
+ul {
+	list-style: none;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	gap: $spacing-l;
+	margin-bottom: $spacing-xl;
+}
+
+.button {
+	width: 25.6rem;
+	height: 4.8rem;
+	border: none;
+	border-radius: 0.8rem;
+	@include elevation-2dp();
+
+	&--primary {
+		background-color: $dark-blue;
+	}
+
+	&__link {
 		display: block;
 		color: $dark-blue;
 		width: 100%;
@@ -57,21 +77,9 @@ button {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-	width: 25.6rem;
-	height: 4.8rem;
-	border: none;
-	border-radius: 0.8rem;
-	@include elevation-2dp();
-}
 
-.primary-btn {
-	a {
-		color: $white;
+		&--primary {
+			color: white;
+		}
 	}
-	background-color: $dark-blue;
-	margin-right: 4.8rem;
-}
-small {
-	font-size: 1.6rem;
 }

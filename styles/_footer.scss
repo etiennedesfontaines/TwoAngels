@@ -1,54 +1,41 @@
-footer {
+.footer {
 	background-color: $dark-blue;
 	background-image: url(../icons/angels-bg-footer-01.svg);
-	background-size: cover;
+	background-position: center;
 	color: $white;
-	padding: $spacing-small $spacing-extra-large $spacing-medium
-		$spacing-extra-large;
-	margin-top: $spacing-large;
+	padding: $spacing-s $spacing-xxxl $spacing-l $spacing-xxxl;
+	margin-top: $spacing-xl;
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
-	div,
-	address {
-		//all columns
+
+	&__content-container {
 		display: flex;
 		flex-direction: column;
-		align-items: left;
+		gap: $spacing-xs;
+		padding-top: $spacing-xs;
 	}
-	address + div {
-		//center column
-		display: flex;
-		flex-direction: column;
+
+	&__content-container:nth-child(2) {
 		align-items: center;
-		img {
-			padding-bottom: $spacing-extra-small;
-		}
-		small,
-		small a {
-			all: revert;
-			color: white;
-			font-size: $base-unit;
-			padding-bottom: 1.2rem;
-			text-decoration: none;
+		gap: 0;
+		padding-top: 0;
+
+		.logo {
+			padding-bottom: $spacing-l;
 		}
 	}
-	address:first-child,
-	div:last-child {
-		//first and last columns
-		padding: $spacing-extra-small 0rem 0rem 0rem;
-
-		p,
-		a {
-			padding: 0rem 0rem $spacing-extra-small 0rem;
-
-			span {
-				display: flex;
-				align-items: center;
-				gap: $spacing-extra-small;
-			}
-		}
+	&__site-info {
+		font-size: 1.2rem;
+		line-height: normal;
+		padding-bottom: 1.2rem;
 	}
-	div:last-child a {
+
+	&__contact-form-link {
 		text-decoration: underline;
 	}
+}
+.contact-info__content {
+	display: flex;
+	align-items: center;
+	gap: $spacing-xs;
 }

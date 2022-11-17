@@ -1,11 +1,11 @@
-#hero {
+.hero-section {
 	height: 100vh;
 	position: relative;
 	background-image: url(../images/desktop/hero/hero-01.jpg);
 	background-size: cover;
 	background-position: bottom;
-	margin-bottom: $spacing-large;
-	div {
+	margin-bottom: $spacing-xl;
+	&__background-gradient {
 		width: 100%;
 		height: 100%;
 		background-image: linear-gradient(
@@ -21,45 +21,54 @@
 		);
 	}
 
-	header {
-		all: revert;
+	&__content {
 		position: absolute;
-		top: $spacing-extra-large;
-		left: $spacing-extra-large;
-		text-align: center;
-
-		h2 {
-			font-size: 13.6rem;
-		}
-		h3 {
-			font-family: "Roboto", sans-serif;
-			font-size: 3.2rem;
-			font-weight: 300;
-			padding: $spacing-small 0rem 0rem 0rem;
-		}
+		top: $spacing-xxxl;
+		left: $spacing-xxxl;
+	}
+	&__heading {
+		font-size: 13.6rem;
+		padding: 0;
+	}
+	&__subheading {
+		font-family: "Roboto", sans-serif;
+		font-size: 3.2rem;
+		font-weight: 300;
+		padding-top: $spacing-s;
 	}
 }
-#suites-and-cottages {
-	margin: 0rem $spacing-extra-large $spacing-large $spacing-extra-large;
-	div {
+
+.suites-and-cottages-section {
+	margin: 0rem $spacing-xxxl $spacing-xl $spacing-xxxl;
+	&__card-container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-gap: $spacing-small;
+		grid-gap: $spacing-s;
 	}
 
-	a {
+	.card {
 		position: relative;
-		display: inline-block;
 		border-radius: 8px;
 		overflow: hidden;
 		line-height: 0;
+		@include elevation-1dp;
 
-		div {
+		&:hover {
+			@include elevation-8dp;
+			transition: all 0.5s ease-in-out;
+		}
+		&__heading {
+			color: $white;
+			line-height: 0;
+			padding-bottom: $spacing-m;
+		}
+		&__description {
+			text-align: center;
+		}
+
+		&__text-wrapper {
 			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
+			inset: 0;
 			background-color: $dark-blue;
 			display: flex;
 			flex-direction: column;
@@ -73,52 +82,83 @@
 				opacity: 75%;
 			}
 		}
-		p {
-			text-align: center;
-		}
-		h4 {
-			color: $white;
-		}
 	}
 }
-//Testimonials
-aside {
-	border: 0.1rem solid $dark-blue;
-	margin: 0rem $spacing-extra-large $spacing-medium $spacing-extra-large;
-	border-radius: 8px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 
-	img:first-child {
+.testimonials {
+	border: 0.1rem solid $dark-blue;
+	margin: 0rem $spacing-xxxl $spacing-l $spacing-xxxl;
+	border-radius: 8px;
+	padding: $spacing-xs;
+
+	&__slides {
+		list-style: none;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+	&__slide {
+		grid-area: 1 / 1 /2 /2;
+		color: $dark-blue;
+		text-align: center;
+		opacity: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: $spacing-xs;
+
+		&[data-active] {
+			opacity: 1;
+		}
+	}
+	&__profile-image {
 		width: 14.4rem;
 		height: auto;
 	}
-	img:last-child {
-		width: 5.2rem;
+	&__stars-image {
+		width: 14.6rem;
 		height: auto;
 	}
-	img {
-		margin: $spacing-extra-small;
+	&__quote {
+		line-height: 1.6;
+	}
+	&__text-wrapper {
+		margin-bottom: $spacing-xs;
+		// display: none;
+	}
+
+	&__progress-indicators {
+		display: flex;
+		justify-content: center;
+		gap: $base-unit;
+		list-style: none;
+	}
+
+	&__progress-indicator {
+		border: 1.6px solid $dark-blue;
+		border-radius: 100%;
+		width: 1.2rem;
+		height: 1.2rem;
+		cursor: pointer;
+		&[data-active] {
+			background-color: $dark-blue;
+		}
 	}
 }
 
-aside + div {
-	display: flex;
-	justify-content: center;
-	margin-bottom: $spacing-large;
-}
-.activities {
+.activities-section {
 	text-align: center;
-	margin: 0 $spacing-extra-large 0 $spacing-extra-large;
+	margin: 0 $spacing-xxxl 0 $spacing-xxxl;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	p {
-		padding: 0 $spacing-extra-small $spacing-medium $spacing-extra-small;
+	&__description {
+		max-width: $measure-body-copy;
+		margin-bottom: $spacing-l;
 	}
-	img {
+	&__image {
 		width: 100%;
 		height: auto;
+		border-radius: $border-radius;
 	}
 }

@@ -1,9 +1,11 @@
 @import "./variables";
 @import "./mixins";
 @import "./global";
-@import "./header";
+// @import "./header";
+@import "./nav-bar";
 @import "./home";
-@import "./suites-and-cottages";
+@import "./accommodation";
 @import "./activities";
 @import "./contact";
 @import "./footer";
+@import "./media-queries";

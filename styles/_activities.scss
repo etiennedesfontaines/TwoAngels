@@ -1,15 +1,18 @@
-#activities {
-	margin: 12.8rem $spacing-extra-large 0rem $spacing-extra-large;
+.activities-page {
+	margin: 12.8rem $spacing-xxxl 0rem $spacing-xxxl;
 	text-align: center;
-	p {
-		margin: $spacing-medium 0rem $spacing-medium 0rem;
-		padding: 0rem $spacing-extra-large 0rem $spacing-extra-large;
-	}
 
-	section {
-		margin-bottom: $spacing-large;
+	&__section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: $spacing-xl;
 	}
-	img {
+	&__description {
+		margin-bottom: $spacing-l;
+		max-width: $measure-body-copy;
+	}
+	&__image {
 		width: 100%;
 		height: auto;
 	}
