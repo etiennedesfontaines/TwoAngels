@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<script src="./custom-html-elements/navBar.js" defer></script>
+		<script src="./scripts/hamburgerMenu.js" defer></script>
+		<script src="./scripts/navigationSignifier.js" defer></script>
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script
+			type="text/javascript"
+			src="./scripts/jquery.touchSwipe.min.js"
+			defer
+		></script>
+		<script src="./scripts/accomodationPage.js" defer></script>
+		<script src="./custom-html-elements/customFooter.js" defer></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<meta
+			name="description"
+			content="Seafront holiday accommodation for your whole family. Pet friendly with sea view, direct lagoon access, parking, wifi and kayaks supplied. Sleeps fourteen."
+		/>
+		<title>Main House - Pet friendly, seafront holiday accommodation.</title>
+	</head>
+	<body>
+		<nav-bar></nav-bar>
+		<main
+			class="accommodation-page main-content"
+			data-main-content="Accommodation Page"
+			data-accommodation-name="Main House"
+		>
+			<section class="accommodation-page__section">
+				<h1>Main House</h1>
+				<p class="accommodation-page__description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
+					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
+					Nisl ornare pul vinar sit euismod. Consequat varius mollis purus
+					facilisis quam rhoncus volutpat molestie sit. Etiam ut ul tricies
+					interdum sit. Tortor lacus volutpat nisi, pretium quam porta congue
+					donec aliquam. Viverra augue risus viverra tellus sed non consequat
+					molestie. Risus facilisis quis sed ipsum. Libero diam consectetur
+					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
+					eleifend tortor justo. Praesent senectus pharetra sapien non.
+				</p>
+				<div class="image-carousel" data-image-carousel>
+					<div class="image-carousel__slide-display-window">
+						<ol class="image-carousel__slides">
+							<li class="image-carousel__slide" data-active>
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/twoangels-seaside-family-holiday-accommodation-family-suite-daybed-01.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-balcony-01.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/twoangels-seaside-family-holiday-accommodation-family-suite-dining-room-01.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/twoangels-seaside-family-holiday-accommodation-family-suite-braai-area-01.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accommodation-luxury-suite-sea-view.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-living-room-02.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-kitchen-01.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-tv-room-02.jpg"
+									alt=""
+								/>
+							</li>
+						</ol>
+
+						<button
+							class="image-carousel__button image-carousel__button--prev"
+							data-carousel-button="prev"
+						>
+							<img src="./icons/chevron-back-circle-outline.svg" alt="" />
+						</button>
+						<button
+							class="image-carousel__button image-carousel__button--next"
+							data-carousel-button="next"
+						>
+							<img src="./icons/chevron-forward-circle-outline.svg" alt="" />
+						</button>
+					</div>
+
+					<ol class="image-carousel__progress-indicators">
+						<li class="image-carousel__progress-indicator" data-active>1</li>
+						<li class="image-carousel__progress-indicator">2</li>
+						<li class="image-carousel__progress-indicator">3</li>
+						<li class="image-carousel__progress-indicator">4</li>
+						<li class="image-carousel__progress-indicator">5</li>
+						<li class="image-carousel__progress-indicator">6</li>
+						<li class="image-carousel__progress-indicator">7</li>
+						<li class="image-carousel__progress-indicator">8</li>
+					</ol>
+				</div>
+				<ul class="accommodation-page__icon-list">
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/person-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Accomodates: 8</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/bed-dbl-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Bedrooms: 3</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/wifi-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">WIFI</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/smart-tv-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Smart T.V</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/room-service-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Room Service</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/tea-and-coffee-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Tea and Coffee</p>
+					</li>
+
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/kayak-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Kayaks</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/security-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">CCTV</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/square-meterage-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">385.23 m2</p>
+					</li>
+				</ul>
+				<div class="buttons">
+					<button class="button button--primary">
+						<a
+							class="button__link button__link--primary"
+							href="https://book.nightsbridge.com/15693"
+							target="_blank"
+						>
+							Book your dream holiday</a
+						>
+					</button>
+					<button class="button">
+						<a class="button__link" href="./contact.html"> Get in touch...</a>
+					</button>
+				</div>
+			</section>
+			<section class="accommodation-page__section">
+				<h2>Sunset Room</h2>
+				<p class="accommodation-page__description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
+					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
+					Nisl ornare pul vinar sit euismod. Consequat varius mollis purus
+					facilisis quam rhoncus volutpat molestie sit. Etiam ut ul tricies
+					interdum sit. Tortor lacus volutpat nisi, pretium quam porta congue
+					donec aliquam. Viverra augue risus viverra tellus sed non consequat
+					molestie. Risus facilisis quis sed ipsum. Libero diam consectetur
+					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
+					eleifend tortor justo. Praesent senectus pharetra sapien non.
+				</p>
+				<div class="image-carousel" data-image-carousel>
+					<div class="image-carousel__slide-display-window">
+						<ol class="image-carousel__slides">
+							<li class="image-carousel__slide" data-active>
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-bed.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-daybed-sea-view.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-dresser.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-en-suite-bathroom-01.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-en-suite-bathroom-02.jpg"
+									alt=""
+								/>
+							</li>
+						</ol>
+						<button
+							class="image-carousel__button image-carousel__button--prev"
+							data-carousel-button="prev"
+						>
+							<img src="./icons/chevron-back-circle-outline.svg" alt="" />
+						</button>
+						<button
+							class="image-carousel__button image-carousel__button--next"
+							data-carousel-button="next"
+						>
+							<img src="./icons/chevron-forward-circle-outline.svg" alt="" />
+						</button>
+					</div>
+
+					<ol class="image-carousel__progress-indicators">
+						<li class="image-carousel__progress-indicator" data-active>1</li>
+						<li class="image-carousel__progress-indicator">2</li>
+						<li class="image-carousel__progress-indicator">3</li>
+						<li class="image-carousel__progress-indicator">4</li>
+						<li class="image-carousel__progress-indicator">5</li>
+					</ol>
+				</div>
+				<ul class="accommodation-page__icon-list">
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/person-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Accomodates: 2</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/sea-view-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Sea View</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/bath-shower-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Bathroom</p>
+					</li>
+
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/smart-tv-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Smart T.V</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/hair-dryer-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Hair Dryer</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/fan-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Fan</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/square-meterage-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">35.46 m2</p>
+					</li>
+				</ul>
+			</section>
+			<section class="accommodation-page__section">
+				<h2>Madonna Room</h2>
+				<p class="accommodation-page__description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
+					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
+					Nisl ornare pul vinar sit euismod. Consequat varius mollis purus
+					facilisis quam rhoncus volutpat molestie sit. Etiam ut ul tricies
+					interdum sit. Tortor lacus volutpat nisi, pretium quam porta congue
+					donec aliquam. Viverra augue risus viverra tellus sed non consequat
+					molestie. Risus facilisis quis sed ipsum. Libero diam consectetur
+					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
+					eleifend tortor justo. Praesent senectus pharetra sapien non.
+				</p>
+				<div class="image-carousel" data-image-carousel>
+					<div class="image-carousel__slide-display-window">
+						<ol class="image-carousel__slides">
+							<li class="image-carousel__slide" data-active>
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-sea-view.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-daybed-01.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-bed.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-en-suite-bathroom.jpg"
+									alt=""
+								/>
+							</li>
+						</ol>
+						<button
+							class="image-carousel__button image-carousel__button--prev"
+							data-carousel-button="prev"
+						>
+							<img src="./icons/chevron-back-circle-outline.svg" alt="" />
+						</button>
+						<button
+							class="image-carousel__button image-carousel__button--next"
+							data-carousel-button="next"
+						>
+							<img src="./icons/chevron-forward-circle-outline.svg" alt="" />
+						</button>
+					</div>
+
+					<ol class="image-carousel__progress-indicators">
+						<li class="image-carousel__progress-indicator" data-active>1</li>
+						<li class="image-carousel__progress-indicator">2</li>
+						<li class="image-carousel__progress-indicator">3</li>
+						<li class="image-carousel__progress-indicator">4</li>
+					</ol>
+				</div>
+				<ul class="accommodation-page__icon-list">
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/person-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Accomodates: 2</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/sea-view-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Sea View</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/bath-shower-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Bathroom</p>
+					</li>
+
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/smart-tv-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Smart T.V</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/hair-dryer-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Hair Dryer</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/fan-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Fan</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/square-meterage-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">24.36 m2</p>
+					</li>
+				</ul>
+			</section>
+			<section class="accommodation-page__section">
+				<h2>Cavalry Room</h2>
+				<p class="accommodation-page__description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
+					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
+					Nisl ornare pul vinar sit euismod. Consequat varius mollis purus
+					facilisis quam rhoncus volutpat molestie sit. Etiam ut ul tricies
+					interdum sit. Tortor lacus volutpat nisi, pretium quam porta congue
+					donec aliquam. Viverra augue risus viverra tellus sed non consequat
+					molestie. Risus facilisis quis sed ipsum. Libero diam consectetur
+					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
+					eleifend tortor justo. Praesent senectus pharetra sapien non.
+				</p>
+				<div class="image-carousel" data-image-carousel>
+					<div class="image-carousel__slide-display-window">
+						<ol class="image-carousel__slides">
+							<li class="image-carousel__slide" data-active>
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-sea-view.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-bed.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-daybed.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-en-suite-bathroom.jpg"
+									alt=""
+								/>
+							</li>
+						</ol>
+						<button
+							class="image-carousel__button image-carousel__button--prev"
+							data-carousel-button="prev"
+						>
+							<img src="./icons/chevron-back-circle-outline.svg" alt="" />
+						</button>
+						<button
+							class="image-carousel__button image-carousel__button--next"
+							data-carousel-button="next"
+						>
+							<img src="./icons/chevron-forward-circle-outline.svg" alt="" />
+						</button>
+					</div>
+
+					<ol class="image-carousel__progress-indicators">
+						<li class="image-carousel__progress-indicator" data-active>1</li>
+						<li class="image-carousel__progress-indicator">2</li>
+						<li class="image-carousel__progress-indicator">3</li>
+						<li class="image-carousel__progress-indicator">4</li>
+					</ol>
+				</div>
+				<ul class="accommodation-page__icon-list">
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/person-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Accomodates: 2</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/sea-view-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Sea View</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/bath-shower-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Bathroom</p>
+					</li>
+
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/smart-tv-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Smart T.V</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/hair-dryer-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Hair Dryer</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/fan-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Fan</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/square-meterage-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">22.98 m2</p>
+					</li>
+				</ul>
+			</section>
+			<section class="accommodation-page__section">
+				<h2>Owl's Room</h2>
+				<p class="accommodation-page__description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
+					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
+					Nisl ornare pul vinar sit euismod. Consequat varius mollis purus
+					facilisis quam rhoncus volutpat molestie sit. Etiam ut ul tricies
+					interdum sit. Tortor lacus volutpat nisi, pretium quam porta congue
+					donec aliquam. Viverra augue risus viverra tellus sed non consequat
+					molestie. Risus facilisis quis sed ipsum. Libero diam consectetur
+					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
+					eleifend tortor justo. Praesent senectus pharetra sapien non.
+				</p>
+				<div class="image-carousel" data-image-carousel>
+					<div class="image-carousel__slide-display-window">
+						<ol class="image-carousel__slides">
+							<li class="image-carousel__slide" data-active>
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/bedrooms/owls-nest/twoangels-seaside-family-holiday-accommodation-family-suite-owls-bedroom-sea-view.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/bedrooms/owls-nest/twoangels-seaside-family-holiday-accommodation-family-suite-owls-bedroom-daybed-01.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/bedrooms/owls-nest/twoangels-seaside-family-holiday-accommodation-family-suite-owls-bedroom-bed-01.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/bedrooms/owls-nest/twoangels-seaside-family-holiday-accommodation-family-suite-owls-bedroom-bed-02.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/bedrooms/owls-nest/twoangels-seaside-family-holiday-accommodation-family-suite-owls-bedroom-en-suite-bathroom.jpg"
+									alt=""
+								/>
+							</li>
+						</ol>
+						<button
+							class="image-carousel__button image-carousel__button--prev"
+							data-carousel-button="prev"
+						>
+							<img src="./icons/chevron-back-circle-outline.svg" alt="" />
+						</button>
+						<button
+							class="image-carousel__button image-carousel__button--next"
+							data-carousel-button="next"
+						>
+							<img src="./icons/chevron-forward-circle-outline.svg" alt="" />
+						</button>
+					</div>
+
+					<ol class="image-carousel__progress-indicators">
+						<li class="image-carousel__progress-indicator" data-active>1</li>
+						<li class="image-carousel__progress-indicator">2</li>
+						<li class="image-carousel__progress-indicator">3</li>
+						<li class="image-carousel__progress-indicator">4</li>
+						<li class="image-carousel__progress-indicator">5</li>
+					</ol>
+				</div>
+				<ul class="accommodation-page__icon-list">
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/person-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Accomodates: 2</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/sea-view-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Sea View</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/bath-shower-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Bathroom</p>
+					</li>
+
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/smart-tv-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Smart T.V</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/hair-dryer-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Hair Dryer</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/square-meterage-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">28.56 m2</p>
+					</li>
+				</ul>
+			</section>
+			<section class="accommodation-page__section">
+				<h2>Seagull's Room</h2>
+				<p class="accommodation-page__description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
+					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
+					Nisl ornare pul vinar sit euismod. Consequat varius mollis purus
+					facilisis quam rhoncus volutpat molestie sit. Etiam ut ul tricies
+					interdum sit. Tortor lacus volutpat nisi, pretium quam porta congue
+					donec aliquam. Viverra augue risus viverra tellus sed non consequat
+					molestie. Risus facilisis quis sed ipsum. Libero diam consectetur
+					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
+					eleifend tortor justo. Praesent senectus pharetra sapien non.
+				</p>
+				<div class="image-carousel" data-image-carousel>
+					<div class="image-carousel__slide-display-window">
+						<ol class="image-carousel__slides">
+							<li class="image-carousel__slide" data-active>
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/bedrooms/seagulls-nest/twoangels-seaside-family-holiday-accommodation-family-suite-seagulls-bedroom-bed.jpeg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/bedrooms/seagulls-nest/twoangels-seaside-family-holiday-accommodation-family-suite-seagulls-bedroom-view.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/bedrooms/seagulls-nest/twoangels-seaside-family-holiday-accommodation-family-suite-seagulls-bedroom-en-suite-bathroom.jpg"
+									alt=""
+								/>
+							</li>
+						</ol>
+						<button
+							class="image-carousel__button image-carousel__button--prev"
+							data-carousel-button="prev"
+						>
+							<img src="./icons/chevron-back-circle-outline.svg" alt="" />
+						</button>
+						<button
+							class="image-carousel__button image-carousel__button--next"
+							data-carousel-button="next"
+						>
+							<img src="./icons/chevron-forward-circle-outline.svg" alt="" />
+						</button>
+					</div>
+
+					<ol class="image-carousel__progress-indicators">
+						<li class="image-carousel__progress-indicator" data-active>1</li>
+						<li class="image-carousel__progress-indicator">2</li>
+						<li class="image-carousel__progress-indicator">3</li>
+					</ol>
+				</div>
+				<ul class="accommodation-page__icon-list">
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/person-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Accomodates: 2</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/sea-view-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Sea View</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/bath-shower-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Bathroom</p>
+					</li>
+
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/smart-tv-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Smart T.V</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/hair-dryer-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Hair Dryer</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/square-meterage-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">30.18 m2</p>
+					</li>
+				</ul>
+			</section>
+			<section class="accommodation-page__section">
+				<h2>Robbin's Room</h2>
+				<p class="accommodation-page__description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
+					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
+					Nisl ornare pul vinar sit euismod. Consequat varius mollis purus
+					facilisis quam rhoncus volutpat molestie sit. Etiam ut ul tricies
+					interdum sit. Tortor lacus volutpat nisi, pretium quam porta congue
+					donec aliquam. Viverra augue risus viverra tellus sed non consequat
+					molestie. Risus facilisis quis sed ipsum. Libero diam consectetur
+					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
+					eleifend tortor justo. Praesent senectus pharetra sapien non.
+				</p>
+				<div class="image-carousel" data-image-carousel>
+					<div class="image-carousel__slide-display-window">
+						<ol class="image-carousel__slides">
+							<li class="image-carousel__slide" data-active>
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/bedrooms/robbins-nest/twoangels-seaside-family-holiday-accommodation-family-suite-robins-bedroom-sea-view.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/bedrooms/robbins-nest/twoangels-seaside-family-holiday-accommodation-family-suite-robins-bedroom-bed.jpeg"
+									alt=""
+								/>
+							</li>
+							<li class="image-carousel__slide">
+								<img
+									class="image-carousel__image"
+									src="./images/desktop/accommodation/suites/family-suite/bedrooms/robbins-nest/twoangels-seaside-family-holiday-accommodation-family-suite-robins-bedroom-bathroom.jpg"
+									alt=""
+								/>
+							</li>
+						</ol>
+						<button
+							class="image-carousel__button image-carousel__button--prev"
+							data-carousel-button="prev"
+						>
+							<img src="./icons/chevron-back-circle-outline.svg" alt="" />
+						</button>
+						<button
+							class="image-carousel__button image-carousel__button--next"
+							data-carousel-button="next"
+						>
+							<img src="./icons/chevron-forward-circle-outline.svg" alt="" />
+						</button>
+					</div>
+
+					<ol class="image-carousel__progress-indicators">
+						<li class="image-carousel__progress-indicator" data-active>1</li>
+						<li class="image-carousel__progress-indicator">2</li>
+						<li class="image-carousel__progress-indicator">3</li>
+					</ol>
+				</div>
+				<ul class="accommodation-page__icon-list">
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/person-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Accomodates: 2</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/sea-view-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Sea View</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/bath-shower-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Bathroom</p>
+					</li>
+
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/smart-tv-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Smart T.V</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/hair-dryer-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Hair Dryer</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/square-meterage-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">24.12 m2</p>
+					</li>
+				</ul>
+			</section>
+			<div class="buttons">
+				<button class="button button--primary">
+					<a
+						class="button__link button__link--primary"
+						href="https://book.nightsbridge.com/15693"
+						target="_blank"
+					>
+						Book your dream holiday</a
+					>
+				</button>
+				<button class="button">
+					<a class="button__link" href="./contact.html"> Get in touch...</a>
+				</button>
+			</div>
+		</main>
+		<custom-footer></custom-footer>
+	</body>
+</html>

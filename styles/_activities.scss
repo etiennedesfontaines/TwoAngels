@@ -1,7 +1,16 @@
 .activities-page {
 	margin: 12.8rem $spacing-xxxl 0rem $spacing-xxxl;
 	text-align: center;
-
+	&__heading {
+		position: absolute;
+		opacity: 0;
+	}
+	&__subheading {
+		display: block;
+		font-family: "Roboto", sans-serif;
+		font-size: 2.4rem;
+		padding-top: $spacing-xxs;
+	}
 	&__section {
 		display: flex;
 		flex-direction: column;
@@ -15,5 +24,6 @@
 	&__image {
 		width: 100%;
 		height: auto;
+		border-radius: $border-radius;
 	}
 }

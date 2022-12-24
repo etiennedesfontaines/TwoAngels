@@ -6,7 +6,15 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<script src="./custom-html-elements/navBar.js" defer></script>
-		<script src="./page-scripts/accomodationPage.js" defer></script>
+		<script src="./scripts/hamburgerMenu.js" defer></script>
+		<script src="./scripts/navigationSignifier.js" defer></script>
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script
+			type="text/javascript"
+			src="./scripts/jquery.touchSwipe.min.js"
+			defer
+		></script>
+		<script src="./scripts/accomodationPage.js" defer></script>
 		<script src="./custom-html-elements/customFooter.js" defer></script>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
@@ -14,13 +22,21 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles/style.css" />
-		<title>Luxuary Suite</title>
+		<meta
+			name="description"
+			content="Beautiful seaside accommodation along The Garden Route. Located on the edge of the Knysna lagoon, this is the ideal destination for family holidays."
+		/>
+		<title>Luxury Suite - Seaside family accommodation for eight.</title>
 	</head>
 	<body>
 		<nav-bar></nav-bar>
-		<main class="accommodation-page">
+		<main
+			class="accommodation-page main-content"
+			data-main-content="Accommodation Page"
+			data-accommodation-name="Luxury Suite"
+		>
 			<section class="accommodation-page__section">
-				<h2>Luxury Suite</h2>
+				<h1>Luxury Suite</h1>
 				<p class="accommodation-page__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
 					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
@@ -38,77 +54,77 @@
 							<li class="image-carousel__slide" data-active>
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-balcony-01.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-balcony-01.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-sea-view.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accommodation-luxury-suite-sea-view.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-kitchen-02-1.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-living-room-02.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-living-room-01.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-living-room-01.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-kitchen-02.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-kitchen-02.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-kitchen-01.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-kitchen-01.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-tv-room-02.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-tv-room-02.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-dining-room-01.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-dining-room-01.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-tv-room-01.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-tv-room-01.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-balcony-daybed-01.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-balcony-daybed-01.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-garden-01.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-garden-01.jpg"
 									alt=""
 								/>
 							</li>
@@ -183,7 +199,7 @@
 						/>
 						<p class="accommodation-page__icon-description">Room Service</p>
 					</li>
-					<li>
+					<li class="accommodation-page__icon-list-item">
 						<img
 							class="accommodation-page__icon"
 							src="./icons/tea-and-coffee-icon.svg"
@@ -191,14 +207,7 @@
 						/>
 						<p class="accommodation-page__icon-description">Tea and Coffee</p>
 					</li>
-					<li class="accommodation-page__icon-list-item">
-						<img
-							class="accommodation-page__icon"
-							src="./icons/square-meterage-icon.svg"
-							alt=""
-						/>
-						<p class="accommodation-page__icon-description">240 m2</p>
-					</li>
+
 					<li class="accommodation-page__icon-list-item">
 						<img
 							class="accommodation-page__icon"
@@ -214,6 +223,14 @@
 							alt=""
 						/>
 						<p class="accommodation-page__icon-description">CCTV</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
+							src="./icons/square-meterage-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">225.27 m2</p>
 					</li>
 				</ul>
 				<div class="buttons">
@@ -232,7 +249,7 @@
 				</div>
 			</section>
 			<section class="accommodation-page__section">
-				<h3>Sunset Room</h3>
+				<h2>Sunset Room</h2>
 				<p class="accommodation-page__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
 					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
@@ -250,35 +267,35 @@
 							<li class="image-carousel__slide" data-active>
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-room-bed.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-bed.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-room-daybed-view.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-daybed-sea-view.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-room-dresser.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-dresser.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-room-bathroom-01.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-en-suite-bathroom-01.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-room-bathroom-02.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-en-suite-bathroom-02.jpg"
 									alt=""
 								/>
 							</li>
@@ -314,6 +331,7 @@
 						/>
 						<p class="accommodation-page__icon-description">Accomodates: 2</p>
 					</li>
+
 					<li class="accommodation-page__icon-list-item">
 						<img
 							class="accommodation-page__icon"
@@ -350,15 +368,23 @@
 					<li class="accommodation-page__icon-list-item">
 						<img
 							class="accommodation-page__icon"
+							src="./icons/fan-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Fan</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
 							src="./icons/square-meterage-icon.svg"
 							alt=""
 						/>
-						<p class="accommodation-page__icon-description">250 m2</p>
+						<p class="accommodation-page__icon-description">35.46 m2</p>
 					</li>
 				</ul>
 			</section>
 			<section class="accommodation-page__section">
-				<h3>Madonna Room</h3>
+				<h2>Madonna Room</h2>
 				<p class="accommodation-page__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
 					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
@@ -376,28 +402,28 @@
 							<li class="image-carousel__slide" data-active>
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-room-view.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-sea-view.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-room-daybed-01.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-daybed-01.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-room-bed.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-bed.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-room-bathroom.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-en-suite-bathroom.jpg"
 									alt=""
 								/>
 							</li>
@@ -468,15 +494,23 @@
 					<li class="accommodation-page__icon-list-item">
 						<img
 							class="accommodation-page__icon"
+							src="./icons/fan-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Fan</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
 							src="./icons/square-meterage-icon.svg"
 							alt=""
 						/>
-						<p class="accommodation-page__icon-description">250 m2</p>
+						<p class="accommodation-page__icon-description">24.36 m2</p>
 					</li>
 				</ul>
 			</section>
 			<section class="accommodation-page__section">
-				<h3>Cavalry Room</h3>
+				<h2>Cavalry Room</h2>
 				<p class="accommodation-page__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
 					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
@@ -494,28 +528,28 @@
 							<li class="image-carousel__slide" data-active>
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-room-view.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-sea-view.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-room-bed.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-bed.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-room-daybed.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-daybed.jpg"
 									alt=""
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="images/desktop/accomodation/suites/luxury-suite/rooms/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-room-bathroom.jpg"
+									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-en-suite-bathroom.jpg"
 									alt=""
 								/>
 							</li>
@@ -586,10 +620,18 @@
 					<li class="accommodation-page__icon-list-item">
 						<img
 							class="accommodation-page__icon"
+							src="./icons/fan-icon.svg"
+							alt=""
+						/>
+						<p class="accommodation-page__icon-description">Fan</p>
+					</li>
+					<li class="accommodation-page__icon-list-item">
+						<img
+							class="accommodation-page__icon"
 							src="./icons/square-meterage-icon.svg"
 							alt=""
 						/>
-						<p class="accommodation-page__icon-description">250 m2</p>
+						<p class="accommodation-page__icon-description">22.98 m2</p>
 					</li>
 				</ul>
 			</section>

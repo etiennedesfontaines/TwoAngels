@@ -40,7 +40,6 @@
 
 .image-carousel {
 	width: 100%;
-	@include elevation-1dp;
 
 	&__slide-display-window {
 		position: relative;
@@ -58,6 +57,9 @@
 		opacity: 0;
 		transition: 200ms opacity ease-in-out;
 		transition-delay: 200ms;
+		border-radius: 8px;
+		overflow: hidden;
+		@include elevation-1dp;
 
 		&[data-active] {
 			opacity: 1;
@@ -69,7 +71,7 @@
 		display: block;
 		width: 100%;
 		height: auto;
-		border-radius: 8px;
+		// border-radius: 8px;
 	}
 
 	&__button {
@@ -85,12 +87,16 @@
 		text-align: center;
 		filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg)
 			brightness(103%) contrast(101%);
-		opacity: 0.5;
+		opacity: 0.7;
 		cursor: pointer;
+		transition: all 0.15s ease;
 
 		&:hover {
-			opacity: 1;
-			background-color: rgba(255, 255, 255, 0.3);
+			@media (hover: hover) {
+				background-color: rgba(255, 255, 255, 0.3);
+				opacity: 1;
+				transform: translateY(-50%) scale(1.1);
+			}
 		}
 		&:focus {
 			border: none;
@@ -126,11 +132,17 @@
 		height: 2.4rem;
 		margin: 0rem $base-unit 0rem $base-unit;
 		cursor: pointer;
-		@include elevation-1dp;
+		@include drop-shadow-1dp;
+		transition: all 0.15s ease;
 
 		&[data-active] {
 			background: $dark-blue;
 			color: $white;
+		}
+		&:hover {
+			@media (hover: hover) {
+				transform: scale(1.1);
+			}
 		}
 	}
 }

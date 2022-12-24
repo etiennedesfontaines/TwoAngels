@@ -28,16 +28,27 @@
 			display: flex;
 			align-items: center;
 		}
+		&:hover {
+			@media (hover: hover) {
+				font-weight: bold;
+				color: white;
+			}
+		}
 	}
 
 	&__nav-link {
-		// &:hover {
-
-		// 	color: white;
-		// }
+		&:hover {
+			@media (hover: hover) {
+				font-weight: bold;
+			}
+		}
 		&--booking-block {
 			color: $dark-blue;
 			font-weight: bold;
+			&:hover {
+				font-weight: bold;
+				color: $dark-blue;
+			}
 		}
 	}
 }
@@ -54,10 +65,10 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 3rem;
+		top: 2.8rem;
 		transform: translateY(-150%);
 		background-color: $dark-blue;
-		border-radius: $border-radius;
+		border-radius: 0 0 $border-radius $border-radius;
 	}
 	&__nav-list {
 		display: flex;
@@ -75,25 +86,61 @@
 		width: 90%;
 		border-bottom: 0.2rem solid rgba($color: #ffffff, $alpha: 0.5);
 		padding: $base-unit 0rem $base-unit 0rem;
-	}
-	&__nav-link--no-underline {
-		border: none;
+
+		&--no-underline {
+			border: none;
+		}
+		&:hover {
+			@media (hover: hover) {
+				font-weight: bold;
+				// opacity: 0.9;
+			}
+		}
 	}
 
 	&:hover {
-		.nav-dropdown__nav-container {
-			transform: translateY(0);
-		}
-		.nav-dropdown__chevron {
-			transform: rotate(180deg) translateX(-$base-unit);
-		}
-	}
-	&:focus {
-		.nav-dropdown__nav-container {
-			transform: translateY(0);
-		}
-		.nav-dropdown__chevron {
-			transform: rotate(180deg) translateX(-$base-unit);
+		@media (hover: hover) {
+			.nav-dropdown__nav-container {
+				transform: translateY(0);
+			}
+			.nav-dropdown__chevron {
+				transform: rotate(180deg) translateX(-$base-unit);
+			}
 		}
 	}
+	// &:focus {
+	// 	.nav-dropdown__nav-container {
+	// 		transform: translateY(0);
+	// 	}
+	// 	.nav-dropdown__chevron {
+	// 		transform: rotate(180deg) translateX(-$base-unit);
+	// 	}
+	// }
+}
+.hamburger-menu-icon {
+	display: none;
+	&__line {
+		width: 2.5rem;
+		height: 0.3rem;
+		background-color: white;
+		margin-bottom: 0.6rem;
+		border-radius: 16px;
+		transition: all 0.5s ease;
+
+		&--bottom {
+			margin: 0;
+		}
+	}
+}
+//Does this need to be placed elsewhere?
+
+.underline {
+	border-bottom: 0.2rem solid white;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.bold {
+	font-weight: bold;
+	color: white;
 }

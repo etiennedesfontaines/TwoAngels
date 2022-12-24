@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!--All metadata for SEO purposes still needs to be addressed-->
-		<!--This includes writing a useful title, content and description etc-->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,20 +12,37 @@
 		/>
 		<link rel="stylesheet" href="/styles/style.css" />
 		<script src="./custom-html-elements/navBar.js" defer></script>
-		<script src="./page-scripts/homePage.js" defer></script>
+		<script src="./scripts/hamburgerMenu.js" defer></script>
+		<script src="./scripts/navigationSignifier.js" defer></script>
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script
+			type="text/javascript"
+			src="./scripts/jquery.touchSwipe.min.js"
+			defer
+		></script>
+		<script src="./scripts/homePage.js" defer></script>
 		<script src="./custom-html-elements/customFooter.js" defer></script>
-		<title>TwoAngels</title>
+		<meta
+			name="description"
+			content="Picturesque seaside accommodation in Knysna. Situated on the water's edge, this is the perfect destination for family holidays and honeymoon vacations."
+		/>
+		<title>TwoAngels - Seaside accommodation in knysna, Western Cape</title>
 	</head>
 	<body>
 		<nav-bar class="nav-bar"></nav-bar>
-		<main>
+
+		<main class="main-content" data-main-content="Home Page">
 			<section class="hero-section">
 				<div class="hero-section__background-gradient"></div>
 				<header class="hero-section__content">
-					<h2 class="hero-section__heading">TwoAngels</h2>
-					<h3 class="hero-section__subheading">
-						Water's Edge Guest House and Cottages
-					</h3>
+					<div class="hero-section__text">
+						<h1 class="hero-section__heading">
+							TwoAngels
+							<span class="hero-section__subheading"
+								>Water's Edge Guest House and Cottages</span
+							>
+						</h1>
+					</div>
 					<div class="buttons">
 						<button class="button button--primary">
 							<a
@@ -39,20 +54,33 @@
 							>
 						</button>
 						<button class="button">
-							<a class="button__link" href="#suites-and-cottages">
+							<a class="button__link" href=".suites-and-cottages">
 								Browse Accomodation...</a
 							>
 						</button>
 					</div>
 				</header>
 			</section>
-			<section class="suites-and-cottages-section" id="suites-and-cottages">
-				<h3>Suites and Cottages</h3>
+			<section class="suites-and-cottages-section">
+				<h2>Suites and Cottages</h2>
 				<div class="suites-and-cottages-section__card-container"></div>
 			</section>
+
 			<aside class="testimonials">
+				<button
+					class="testimonials__button testimonials__button--prev"
+					data-carousel-button="prev"
+				>
+					<img src="./icons/chevron-back-circle-outline.svg" alt="" />
+				</button>
+				<button
+					class="testimonials__button testimonials__button--next"
+					data-carousel-button="next"
+				>
+					<img src="./icons/chevron-forward-circle-outline.svg" alt="" />
+				</button>
 				<ol class="testimonials__slides">
-					<li class="testimonials__slide" data-slide-position="0" data-active>
+					<li class="testimonials__slide" data-active>
 						<img
 							class="testimonials__profile-image"
 							src="./icons/profile-icon.svg"
@@ -64,24 +92,61 @@
 							alt=""
 						/>
 						<div class="testimonials__text-wrapper">
+							<h2 class="testimonials__heading">Amazing time at TwoAngels</h2>
 							<q class="testimonials__quote">
-								Incredible guest house with outstanding views. We thoroughly
-								enjoyed our stay.
+								This has been one of my best travel experiences. The Location is
+								one of the best even compared to my Caribbean holidays. Two
+								angels has a very serene atmosphere, the private beach is just
+								amazing.
 							</q>
-							<p>- Guest Name, Trip Advisor</p>
+							<p>- msarai | Trip Advisor</p>
 						</div>
 					</li>
-					<!-- <li class="testimonials__slide" data-slide-position="1">
+					<li class="testimonials__slide">
 						<img
 							class="testimonials__profile-image"
 							src="./icons/profile-icon.svg"
 							alt=""
 						/>
-						<q class="testimonials__quote">
-							This place is nothing short of magical... Surreal almost. In our
-							opinion one of the most beautiful places of SA.
-						</q>
-					</li> -->
+						<img
+							class="testimonials__stars-image"
+							src="./icons/five-stars.svg"
+							alt=""
+						/>
+						<div class="testimonials__text-wrapper">
+							<h2 class="testimonials__heading">
+								Romantic, Cosy, Beautiful Views
+							</h2>
+							<q class="testimonials__quote">
+								Cosy, private room with fireplace, amazing views and only a few
+								steps from the balcony to the beach. You could hear the waves
+								from the bed and watch the sunset from the secluded balcony.
+							</q>
+							<p>- Trusha, Trip Advisor</p>
+						</div>
+					</li>
+					<li class="testimonials__slide">
+						<img
+							class="testimonials__profile-image"
+							src="./icons/profile-icon.svg"
+							alt=""
+						/>
+						<img
+							class="testimonials__stars-image"
+							src="./icons/five-stars.svg"
+							alt=""
+						/>
+						<div class="testimonials__text-wrapper">
+							<h2 class="testimonials__heading">Beautiful!</h2>
+							<q class="testimonials__quote">
+								An absolutely beautiful place to stay. The location was spot on.
+								Probably the best in town. We we could have stayed longer, but
+								all good things need to come to an end. Thank Robert. You were
+								wonderful!!
+							</q>
+							<p>- joolskey, Trip Advisor</p>
+						</div>
+					</li>
 				</ol>
 				<ol class="testimonials__progress-indicators">
 					<li
@@ -92,6 +157,10 @@
 					<li
 						class="testimonials__progress-indicator"
 						data-indicator-position="1"
+					></li>
+					<li
+						class="testimonials__progress-indicator"
+						data-indicator-position="2"
 					></li>
 				</ol>
 			</aside>
@@ -110,16 +179,7 @@
 				</button>
 			</div>
 			<section class="activities-section">
-				<!--I'm considering the possibility of this section being an aside instead?-->
-				<!--an aside represents a portion of the document whose content is only indirectly
-					related to the main content of the document. Given that the documnets main purpose 
-					is TwoAngels, the activities in the surrounding area are only indirectly related.
-					So I think it is likely more correct. I'd like to put this thinking past one or 
-					two other people before implementing it.
-					Will this affect the contents of my main navigation, considering I have activities as 
-					part of my main nav?
-				-->
-				<h3>Activities</h3>
+				<h2>Activities</h2>
 
 				<p class="activities-section__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque,
@@ -130,11 +190,13 @@
 					integer vulputate. Elementum condimentum libero pharetra, massa metus,
 					convallis tempor, sagittis id.
 				</p>
-				<img
-					class="activities-section__image"
-					src="./images/desktop/gallary/extras-01.jpg"
-					alt=""
-				/>
+				<a href="./activities.html">
+					<img
+						class="activities-section__image"
+						src="./images/desktop/activities/ocean-oddyssey/ocean-oddyssey-whale-01.jpg"
+						alt=""
+					/>
+				</a>
 			</section>
 		</main>
 		<custom-footer></custom-footer>

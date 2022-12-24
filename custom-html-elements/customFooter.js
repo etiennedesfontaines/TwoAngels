@@ -8,17 +8,18 @@ class CustomFooter extends HTMLElement {
                 class="contact-info__content"
                 href="tel:+27&nbsp;082&nbsp;820&nbsp;9246"
             >
-                <img src="./icons/phone-icon.svg" alt="" />+27(0)82-820-9246
+                <img class="contact-info__icon" src="./icons/phone-icon.svg" alt="" />+27(0)82-820-9246
             </a>
             <a class="contact-info__content" href="bassecour.rd@mweb.co.za">
-                <img src="./icons/e-mail-icon.svg" alt="" />
+                <img class="contact-info__icon" src="./icons/e-mail-icon.svg" alt="" />
                 bassecour.rd@mweb.co.za
             </a>
             <a
                 class="contact-info__content"
                 href="https://goo.gl/maps/r61P54Ai56ta5C7F7"
+                target=”_blank”
             >
-                <img src="./icons/location-icon.svg" alt="" /> 1 George Rex Drive, The
+                <img class="contact-info__icon" src="./icons/location-icon.svg" alt="" /> 1 George Rex Drive, The
                 Heads, Knysna <br />Western Cape, South Africa
             </a>
         </address>
@@ -31,10 +32,10 @@ class CustomFooter extends HTMLElement {
             >
             <a class="footer__site-info" href="">Privacy policy</a>
 
-            <a class="footer__site-info" href="">Sitemap</a>
+            <a class="footer__site-info footer__site-info--no-padding" href="">Sitemap</a>
         </div>
         <div class="footer__content-container">
-            <p>
+            <p class="footer__testimonial">
                 “I enjoyed my stay so much that I extended it form one week to a
                 month! 10/10”<br />
                 -Trip Advisor
