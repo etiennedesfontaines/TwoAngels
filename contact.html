@@ -14,21 +14,32 @@
 		/>
 		<link rel="stylesheet" href="/styles/style.css" />
 		<script src="./custom-html-elements/navBar.js" defer></script>
-		<script src="./page-scripts/contactPage.js"></script>
+		<script src="./scripts/hamburgerMenu.js" defer></script>
+		<script src="./scripts/navigationSignifier.js" defer></script>
+		<script src="./scripts/contactPage.js" defer></script>
 		<script src="./custom-html-elements/customFooter.js" defer></script>
-		<title>Contact</title>
+		<meta
+			name="description"
+			content="Contact TwoAngels - seaside accommodation, Knysna, Western Cape. Accommodation enquires, bookings, weddings, honeymoon cottages, family holidays, pet friendly accommodation."
+		/>
+		<title>Contact TwoAngels - Water's edge accommodation in Knysna.</title>
 	</head>
 	<nav-bar></nav-bar>
 	<body>
-		<main class="contact-page">
-			<h2>Contact Us</h2>
+		<main class="contact-page main-content" data-main-content="Contact Page">
+			<h1>Contact Us</h1>
 			<p>
-				If you have any questions about TwoAngels and what we offer, please feel
-				free to give us a call or send us a message.
+				If you have any questions about TwoAngels, please feel free to give us a
+				call or send us a message.
 			</p>
 			<div class="contact-page__form-wrapper">
 				<div class="contact-page__form-background-gradient"></div>
-				<form class="contact-form contact-page__contact-form" action="">
+				<form
+					class="contact-form contact-page__contact-form"
+					name="contact-form"
+					method="POST"
+					data-netlify="true"
+				>
 					<label class="contact-form__input-label" for="name">
 						<input
 							class="contact-form__input"
@@ -68,30 +79,25 @@
 							placeholder="Message"
 						></textarea>
 					</label>
-					<div class="contact-form__privacy-policy-wrapper">
-						<h3 class="contact-form__privacy-policy-heading">
-							Privacy Policy:
-						</h3>
-						<p class="contact-form__privacy-policy-description">
-							<a class="contact-form__privacy-policy-link" href="">
-								Click here</a
-							>
-							to read our privacy policy.
-						</p>
-						<label class="contact-form__input-label" for="privacy-policy">
-							<input
-								class="contact-form__input"
-								type="checkbox"
-								id="privacy-policy"
-								name="privacy-policy"
-								value="I agree to the processing of my personal data"
-								required
-							/>
 
-							I have read the privacy policy and I give consent to the
-							processing of my personal data.
-						</label>
-					</div>
+					<label class="contact-form__input-label" for="privacy-policy">
+						<input
+							class="contact-form__input"
+							type="checkbox"
+							id="privacy-policy"
+							name="privacy-policy"
+							value="I agree to the processing of my personal data"
+							required
+						/>
+						<div>
+							I have read the
+							<a class="contact-form__privacy-policy-link" href="#">
+								privacy policy
+							</a>
+							and I give consent to the processing of my personal data.
+						</div>
+					</label>
+
 					<div class="contact-form__last-row">
 						<input
 							class="contact-form__submission-button"
@@ -99,10 +105,13 @@
 							value="Submit"
 						/>
 						<address>
-							<a href="tel:+27&nbsp;082&nbsp;820&nbsp;9246">
+							<a
+								class="contact-info"
+								href="tel:+27&nbsp;082&nbsp;820&nbsp;9246"
+							>
 								<span class="contact-info__content">
 									<img
-										class="footer-icon"
+										class="contact-form__icon"
 										src="./icons/phone-icon.svg"
 										alt=""
 									/>+27(0)82-820-9246

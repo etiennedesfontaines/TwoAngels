@@ -19,10 +19,9 @@
 		align-items: center;
 		gap: 0;
 		padding-top: 0;
-
-		.logo {
-			padding-bottom: $spacing-l;
-		}
+	}
+	.logo {
+		padding-bottom: $spacing-l;
 	}
 	&__site-info {
 		font-size: 1.2rem;
@@ -32,10 +31,21 @@
 
 	&__contact-form-link {
 		text-decoration: underline;
+		&:hover {
+			font-weight: bold;
+		}
 	}
 }
 .contact-info__content {
 	display: flex;
 	align-items: center;
 	gap: $spacing-xs;
+	&:hover {
+		@media (hover: hover) {
+			font-weight: bold;
+			.contact-info__icon {
+				transform: scale(1.1);
+			}
+		}
+	}
 }

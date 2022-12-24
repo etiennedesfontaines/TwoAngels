@@ -14,14 +14,29 @@
 		/>
 		<link rel="stylesheet" href="/styles/style.css" />
 		<script src="./custom-html-elements/navBar.js" defer></script>
+		<script src="./scripts/hamburgerMenu.js" defer></script>
+		<script src="./scripts/navigationSignifier.js" defer></script>
 		<script src="./custom-html-elements/customFooter.js" defer></script>
-		<title>Activities</title>
+		<meta
+			name="description"
+			content="Knysna offers a wide range of activities. Whether you enjoy zip lining, forest walks, hikes, supping over the lagoon, or whale watching, Knysna has you covered."
+		/>
+		<title>Activities - things to do in Knysna, Western Cape</title>
 	</head>
 	<body>
 		<nav-bar></nav-bar>
-		<main class="activities-page">
+		<main
+			class="activities-page main-content"
+			data-main-content="Activities Page"
+		>
+			<h1 class="activities-page__heading">Activities in knysna</h1>
+
 			<section class="activities-page__section">
-				<h2>Activities</h2>
+				<h2>
+					Ocean Oddyssey
+					<span class="activities-page__subheading">- Whale Watching -</span>
+				</h2>
+
 				<p class="activities-page__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
 					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
@@ -35,12 +50,16 @@
 				</p>
 				<img
 					class="activities-page__image"
-					src="./images/desktop/gallary/extras-01.jpg"
+					src="./images/desktop/activities/ocean-oddyssey/ocean-oddyssey-whale-01.jpg"
 					alt=""
 				/>
 			</section>
 			<section class="activities-page__section">
-				<h2>Activities</h2>
+				<h2>
+					Sans Parks<span class="activities-page__subheading"
+						>- Hiking Trails -</span
+					>
+				</h2>
 				<p class="activities-page__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
 					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
@@ -54,12 +73,16 @@
 				</p>
 				<img
 					class="activities-page__image"
-					src="./images/desktop/gallary/extras-01.jpg"
+					src="./images/desktop/activities/sans-parks/sans-parks-hiking-trails-01.jpg"
 					alt=""
 				/>
 			</section>
 			<section class="activities-page__section">
-				<h2>Activities</h2>
+				<h2>
+					Knysna Charters<span class="activities-page__subheading"
+						>- Supping -</span
+					>
+				</h2>
 				<p class="activities-page__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
 					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
@@ -73,29 +96,25 @@
 				</p>
 				<img
 					class="activities-page__image"
-					src="./images/desktop/gallary/extras-01.jpg"
+					src="./images/desktop/activities/knysna-charters/knysna-charters-supping-02.jpg"
 					alt=""
 				/>
 			</section>
-			<section class="activities-page__section">
-				<h2>Activities</h2>
-				<p class="activities-page__description">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
-					sollicitudin purus mauris, amet. Nisl sit et quam mattis leo quam.
-					Nisl ornare pulvinar sit euismod. Consequat varius mollis purus
-					facilisis quam rhoncus volutpat molestie sit. Etiam ut ultricies
-					interdum sit. Tortor lacus volutpat nisi, pretium quam porta congue
-					donec aliquam. Viverra augue risus viverra tellus sed non consequat
-					molestie. Risus facilisis quis sed ipsum. Libero diam consectetur
-					tincidunt semper duis netus. Dui malesuada elit donec habitasse urna,
-					eleifend tortor justo. Praesent senectus pharetra sapien non.
-				</p>
-				<img
-					class="activities-page__image"
-					src="./images/desktop/gallary/extras-01.jpg"
-					alt=""
-				/>
-			</section>
+
+			<div class="buttons">
+				<button class="button button--primary">
+					<a
+						class="button__link button__link--primary"
+						href="https://book.nightsbridge.com/15693"
+						target="_blank"
+					>
+						Book your dream holiday</a
+					>
+				</button>
+				<button class="button">
+					<a class="button__link" href="./contact.html"> Get in touch...</a>
+				</button>
+			</div>
 		</main>
 		<custom-footer></custom-footer>
 	</body>

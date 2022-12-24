@@ -9,6 +9,12 @@ html {
 	font-size: 62.5%;
 	font-family: "Roboto", sans-serif;
 }
+body {
+	background-color: $white;
+}
+.main-content {
+	transition: filter 0.5s ease;
+}
 
 h1,
 h2,
@@ -20,13 +26,13 @@ h4 {
 	text-align: center;
 }
 
-h2,
-h3 {
+h1,
+h2 {
 	font-size: 4.8rem;
 	padding-bottom: $spacing-l;
 }
 
-h4 {
+h3 {
 	font-size: 3.2rem;
 	padding-bottom: $spacing-m;
 }
@@ -38,8 +44,11 @@ input,
 textarea {
 	font-size: 1.8rem;
 	font-weight: 400;
-	//The line height below is the equivalent to 160%
 	line-height: 1.6;
+}
+p,
+a {
+	letter-spacing: 0.8px;
 }
 
 a,
@@ -64,6 +73,7 @@ ul {
 	border: none;
 	border-radius: 0.8rem;
 	@include elevation-2dp();
+	transition: all 0.15s ease;
 
 	&--primary {
 		background-color: $dark-blue;
@@ -80,6 +90,12 @@ ul {
 
 		&--primary {
 			color: white;
+		}
+	}
+	&:hover {
+		@media (hover: hover) {
+			transform: scale(1.1);
+			@include elevation-4dp();
 		}
 	}
 }

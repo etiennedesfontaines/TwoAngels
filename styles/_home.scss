@@ -1,7 +1,7 @@
 .hero-section {
 	height: 100vh;
 	position: relative;
-	background-image: url(../images/desktop/hero/hero-01.jpg);
+	background-image: url(../images/desktop/background/hero/hero-01.jpg);
 	background-size: cover;
 	background-position: bottom;
 	margin-bottom: $spacing-xl;
@@ -25,16 +25,22 @@
 		position: absolute;
 		top: $spacing-xxxl;
 		left: $spacing-xxxl;
+		top: $spacing-xxl;
+		left: $spacing-s;
 	}
 	&__heading {
 		font-size: 13.6rem;
 		padding: 0;
 	}
 	&__subheading {
+		display: block;
 		font-family: "Roboto", sans-serif;
 		font-size: 3.2rem;
 		font-weight: 300;
-		padding-top: $spacing-s;
+		padding-bottom: $spacing-l;
+	}
+	.button__link--primary {
+		text-decoration: underline;
 	}
 }
 
@@ -52,10 +58,14 @@
 		overflow: hidden;
 		line-height: 0;
 		@include elevation-1dp;
+		transition: all 0.15s ease-in-out;
+		// @include elevation-1dp-new;
 
 		&:hover {
-			@include elevation-8dp;
-			transition: all 0.5s ease-in-out;
+			@media (hover: hover) {
+				transform: scale(1.02);
+				@include elevation-8dp;
+			}
 		}
 		&__heading {
 			color: $white;
@@ -64,6 +74,7 @@
 		}
 		&__description {
 			text-align: center;
+			color: $white;
 		}
 
 		&__text-wrapper {
@@ -76,21 +87,58 @@
 			align-items: center;
 			padding: 0rem 10.4rem 0rem 10.4rem;
 			opacity: 0;
-			transition: all 0.5s ease-in-out;
+			transition: all 0.15s ease-in-out;
 
 			&:hover {
-				opacity: 75%;
+				@media (hover: hover) {
+					opacity: 75%;
+				}
 			}
 		}
 	}
 }
 
 .testimonials {
-	border: 0.1rem solid $dark-blue;
+	position: relative;
 	margin: 0rem $spacing-xxxl $spacing-l $spacing-xxxl;
+	border: 0.1rem solid $dark-blue;
 	border-radius: 8px;
 	padding: $spacing-xs;
 
+	&__button {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 100%;
+		border: none;
+		background: none;
+		text-align: center;
+		filter: invert(12%) sepia(35%) saturate(7218%) hue-rotate(231deg)
+			brightness(98%) contrast(96%);
+		cursor: pointer;
+		opacity: 0.8;
+		transition: all 0.15s ease;
+
+		&:hover {
+			@media (hover: hover) {
+				opacity: 1;
+				transform: translateY(-50%) scale(1.1);
+			}
+		}
+		&:focus {
+			border: none;
+		}
+
+		&--prev {
+			left: 1rem;
+		}
+		&--next {
+			right: 1rem;
+		}
+	}
 	&__slides {
 		list-style: none;
 		display: grid;
@@ -116,15 +164,21 @@
 		height: auto;
 	}
 	&__stars-image {
-		width: 14.6rem;
+		width: 14.4rem;
 		height: auto;
 	}
+	&__heading {
+		font-size: 3.2rem;
+		padding: 0;
+		// line-height: normal;
+	}
 	&__quote {
+		display: block;
 		line-height: 1.6;
+		padding: 0rem 36rem 1.2rem 36rem;
 	}
 	&__text-wrapper {
 		margin-bottom: $spacing-xs;
-		// display: none;
 	}
 
 	&__progress-indicators {
@@ -132,6 +186,7 @@
 		justify-content: center;
 		gap: $base-unit;
 		list-style: none;
+		transition: all 0.15s ease;
 	}
 
 	&__progress-indicator {
@@ -143,12 +198,17 @@
 		&[data-active] {
 			background-color: $dark-blue;
 		}
+		&:hover {
+			@media (hover: hover) {
+				transform: scale(1.1);
+			}
+		}
 	}
 }
 
 .activities-section {
-	text-align: center;
 	margin: 0 $spacing-xxxl 0 $spacing-xxxl;
+	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
