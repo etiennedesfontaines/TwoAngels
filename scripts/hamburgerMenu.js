@@ -24,16 +24,18 @@ hamburgerIcon.addEventListener("click", () => {
 	hamburgerIcon.classList.toggle("hamburger-menu--is-open");
 });
 
-//The below logic needs to  be in a mobile/ tablet condition
-navDropdown.addEventListener("click", () => {
-	navDropdown.classList.toggle("nav-dropdown--is-open");
-	navDropdownItems.forEach((item, index) => {
-		if (item.style.animation) {
-			item.style.animation = ``;
-		} else {
-			item.style.animation = `hamburgerMenuItemAnimation 0.5s ease forwards ${
-				index / 7
-			}s`;
-		}
+let izMobile = window.innerWidth <= 1368 ? true : false;
+if (izMobile) {
+	navDropdown.addEventListener("click", () => {
+		navDropdown.classList.toggle("nav-dropdown--is-open");
+		navDropdownItems.forEach((item, index) => {
+			if (item.style.animation) {
+				item.style.animation = ``;
+			} else {
+				item.style.animation = `hamburgerMenuItemAnimation 0.5s ease forwards ${
+					index / 7
+				}s`;
+			}
+		});
 	});
-});
+}

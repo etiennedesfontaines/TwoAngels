@@ -10,7 +10,7 @@ class CustomFooter extends HTMLElement {
             >
                 <img class="contact-info__icon" src="./icons/phone-icon.svg" alt="" />+27(0)82-820-9246
             </a>
-            <a class="contact-info__content" href="bassecour.rd@mweb.co.za">
+            <a class="contact-info__content" href="mailto:bassecour.rd@mweb.co.za">
                 <img class="contact-info__icon" src="./icons/e-mail-icon.svg" alt="" />
                 bassecour.rd@mweb.co.za
             </a>
@@ -36,13 +36,13 @@ class CustomFooter extends HTMLElement {
         </div>
         <div class="footer__content-container">
             <p class="footer__testimonial">
-                “I enjoyed my stay so much that I extended it form one week to a
+                “I enjoyed my stay so much that I extended it from one week to a
                 month! 10/10”<br />
                 -Trip Advisor
             </p>
             <p>
                 If you have any questions,
-                <a class="footer__contact-form-link" href="#">get in touch.</a>
+                <a class="footer__contact-form-link" href="../contact.html">get in touch.</a>
             </p>
         </div>
     </footer>      

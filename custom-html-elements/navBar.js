@@ -94,7 +94,7 @@ class NavBar extends HTMLElement {
                         >Book Now</a
                     >
                 </li>
-            </ul>
+            </ul>  
         </nav>
     </header>`;
 	}

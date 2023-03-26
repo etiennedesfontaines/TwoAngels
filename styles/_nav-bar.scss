@@ -20,6 +20,7 @@
 	}
 
 	&__nav-list-item {
+		position: relative;
 		padding: 0rem $base-unit 0rem $base-unit;
 
 		&--booking-block {
@@ -30,8 +31,8 @@
 		}
 		&:hover {
 			@media (hover: hover) {
-				font-weight: bold;
-				color: white;
+				text-shadow: 0 0 0.65px rgb(255, 255, 255),
+					0 0 0.65px rgb(255, 245, 245);
 			}
 		}
 	}
@@ -39,7 +40,9 @@
 	&__nav-link {
 		&:hover {
 			@media (hover: hover) {
-				font-weight: bold;
+				text-shadow: 0 0 0.65px rgb(255, 255, 255),
+					0 0 0.65px rgb(255, 245, 245);
+				// font-weight: bold;
 			}
 		}
 		&--booking-block {
@@ -93,7 +96,6 @@
 		&:hover {
 			@media (hover: hover) {
 				font-weight: bold;
-				// opacity: 0.9;
 			}
 		}
 	}
@@ -108,14 +110,6 @@
 			}
 		}
 	}
-	// &:focus {
-	// 	.nav-dropdown__nav-container {
-	// 		transform: translateY(0);
-	// 	}
-	// 	.nav-dropdown__chevron {
-	// 		transform: rotate(180deg) translateX(-$base-unit);
-	// 	}
-	// }
 }
 .hamburger-menu-icon {
 	display: none;
@@ -132,7 +126,8 @@
 		}
 	}
 }
-//Does this need to be placed elsewhere?
+
+//Should these be in a seperate file?
 
 .underline {
 	border-bottom: 0.2rem solid white;
