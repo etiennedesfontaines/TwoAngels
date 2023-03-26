@@ -67,16 +67,6 @@
 				@include elevation-8dp;
 			}
 		}
-		&__heading {
-			color: $white;
-			line-height: 0;
-			padding-bottom: $spacing-m;
-		}
-		&__description {
-			text-align: center;
-			color: $white;
-		}
-
 		&__text-wrapper {
 			position: absolute;
 			inset: 0;
@@ -85,7 +75,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			padding: 0rem 10.4rem 0rem 10.4rem;
+			padding: $spacing-l $spacing-xs $spacing-xxs $spacing-xs;
 			opacity: 0;
 			transition: all 0.15s ease-in-out;
 
@@ -95,10 +85,42 @@
 				}
 			}
 		}
+		&__heading {
+			color: $white;
+			line-height: 0;
+			padding-bottom: $spacing-m;
+		}
+		&__description {
+			text-align: center;
+			color: $white;
+			margin-bottom: $spacing-s;
+			max-width: 48rem;
+		}
+		&__icon-list {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			padding: $spacing-xxs;
+		}
+		&__icon-list-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 0.8rem;
+		}
+		&__icon {
+			filter: invert(94%) sepia(4%) saturate(119%) hue-rotate(188deg)
+				brightness(103%) contrast(94%);
+		}
+		&__icon-description {
+			color: $white;
+		}
 	}
 }
 
-.testimonials {
+.testimonials-section {
 	position: relative;
 	margin: 0rem $spacing-xxxl $spacing-l $spacing-xxxl;
 	border: 0.1rem solid $dark-blue;

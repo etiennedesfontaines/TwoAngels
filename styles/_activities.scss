@@ -18,10 +18,16 @@
 		margin-bottom: $spacing-xl;
 	}
 	&__description {
-		margin-bottom: $spacing-l;
 		max-width: $measure-body-copy;
+		&--cta {
+			color: $dark-blue;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 	&__image {
+		margin-top: $spacing-l;
 		width: 100%;
 		height: auto;
 		border-radius: $border-radius;

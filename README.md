@@ -2,69 +2,52 @@
 
 ## Issues - GitHub:
 
-- There is a strange shudder happening when HOME is selected
-- Nav elements move to the left when elements two and three bold on hover.
+- mobile book now button, invisible after use.
+- responsiveness for smaller mobile phones
 - TabIndex for all nav items?
-- Refactor Consideration: naming relating to hamburger menu
 - Able to swipe carousels even when using desktop.
 - Create componenets for reusable elements (time permitting)
 - Add variable for 6.4 rem - change other variables so it makes sense in size order and name.
 - folder for HTML files and reroute all necessary file paths?
+- Seperate @media query style into appropriate style sheets.
+- CSS mixins and variables to reduce any unecessary repetition.
+- Cards: Device identification to allow JS to better understand whether it needs to populate mobile or desktop card, even when devices are in a landscapte orientation.
+- Refactor carousel logic repetition
+- Using text-shadow for bold hover state in Nav bar, would prefer to use bold and implement a solution to prevent layout shift. The solutions I tried weren't working and I couldn't afford to allocate more time to this at this point.
+- homePage.js and hamburgerMenu.js both have temporary solutions for isMobile. Implement a more effective device detection method/ utilise an appropriate library.
+- card population for mobile and desktop both require the page is reloaded to register whether or not it is mobile, consider putting this in a function that allows detection without page reload.
 
 ## Questions:
 
-### Faj
-
-- Kayaking activity: speaking about what you can do directly from TwoAngels?
-- Copy
+- Do all units include a TV?
 
 ## To do:
 
-### houseKeeping
+- Copy writing:
 
-- Tesimonials: naming - change to testimonials-section
-- Seperate @media query style into appropriate style sheets.
-- CSS mixins and variables to reduce any unecessary repetition.
+  - bedrooms (luxury and family suites)
+  - Activities:
+    - home page teaser
+    - each activity option on activities page.
+    - https://www.sanparks.org/parks/garden_route/tourism/activities/hiking_nature_walks.php
 
-### All Pages
+- Styling:
+- Home page accomodation thumbnails.
+- check responsiveness.
 
-- bold hover state - without layout shift (implement solution - css tricks)
-- Image alt text (implement post meeting with Faj)
+- Refactor
 
-#### Copy Writing
+  - code base
+  - Readme
 
-- Copywriting all pages
-- Copy for Sans park hiking trails https://www.sanparks.org/parks/garden_route/tourism/activities/hiking_nature_walks.php
+- Deployment and hosting:
+- Netlify Docs
+- Design
 
-### Home Page
-
-- Cards: Device identification to allow JS to better understand whether it needs to populate mobile or desktop card, even when devices are in a landscapte orientation.
-
-- mobile cards: drop shadow not rendering?
-
-### Contact Page
-
-- Submission data handling - Netlify forms
-
-### Nav Bar
-
-- Mobile dropdown animation is happening on desktop - wrap in conditional (tablet || bobile) to disable.
-
-### Footer
-
-- email link not working? Chim
-
-### Other
-
-- Privacy policy page
-- sitemap
-- Security
-- Hosting and Deployment - Netlify Docs
-
-### Process
-
-- Documentation - Readme.md
-- Design refactor / clean up - platform realease/ image and link on github
+- Other:
+  - Privacy policy page
+  - sitemap (XML)
+  - Security
 
 ## Table of contents
 

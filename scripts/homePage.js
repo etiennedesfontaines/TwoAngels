@@ -1,4 +1,3 @@
-//HERO SECTION SECONDARY BTN SCROLL OPEN
 const secondaryHeroBtn = document.querySelector(`a[href=".suites-and-cottages"]`); //prettier-ignore
 secondaryHeroBtn.addEventListener("click", (e) => {
 	const viewHeight = window.innerHeight;
@@ -8,89 +7,71 @@ secondaryHeroBtn.addEventListener("click", (e) => {
 		behavior: "smooth",
 	});
 });
-
-//HERO SECTION SECONDARY BTN SCROLL CLOSE
-
-//SUITES AND COTTAGES OPEN
-
 const suitesAndCottagesCardContainer = document.querySelector(".suites-and-cottages-section__card-container"); //prettier-ignore
 const cards = [
 	{
 		heading: `Lover's Nest`,
 		description: `Romance awaits you...<br />
-		Lover's nest is your intimate getaway for two.<br />
-		Cozy up to the enchanting glow of your fireplace in winter. Bask
-		in the sublime sunshine on your private balcony in summer. And
-		wake up, all year round, to the most breathtaking view of the
-		tidal lagoon.`,
+		Lover's nest is your intimate getaway for two.`,
+		accomodates: `2`,
 		imageDesktop: `../images/desktop/accommodation/twoangels-seaside-accommodation-knysna-western-cape-lovers-nest.jpg`,
-		imageMobile: `../images/mobile/accommodation/twoangels-honeymoon-accommodation-lovers-nest-sea-view-bed.jpg`,
-		imageAltText: ``,
+		imageMobile: `../images/mobile/accommodation/twoangels-seaside-accommodation-knysna-western-cape-lovers-nest.jpg`,
+		imageAltText: `A romantic sea view from the bed of Lover’s Nest cottage at TwoAngels in Knysna. The bed is in the foreground. It looks out through open french doors, over a quaint private balcony with a table for two, and onto a body of blue water.`,
 		link: `lovers-nest.html`,
 	},
 
 	{
 		heading: `The Oyster Shell`,
 		description: `Relaxation is in the air…<br />
-		The Oyster Shell is your healing escape for two.<br />
-		Watch stunning sunsets from the comfort of your secluded daybed.
-		Braai in the charming intimacy of your private balcony. And
-		savour the infinite beauty of uninterrupted lagoon views.`,
+		The Oyster Shell is your healing escape for two.`,
+		accomodates: `2`,
+		isPetFriendly: true,
 		imageDesktop: `../images/desktop/accommodation/twoangels-seaside-accommodation-knysna-western-cape-the-oyster-shell.jpg`,
-		imageMobile: `../images/mobile/accommodation/twoangels-couples-retreat-oyster-shell-daybed.jpg`,
-		imageAltText: ``,
+		imageMobile: `../images/mobile/accommodation/twoangels-seaside-accommodation-knysna-western-cape-the-oyster-shell.jpg`,
+		imageAltText: `The Oyster Shell balcony dining area, with its daybed and sea view. A beautiful, pink flowering bougainvillea surrounds the balcony, romantically framing the view of the sea.`,
 		link: `the-oyster-shell.html`,
 	},
 	{
 		heading: `The Angel's Lair`,
 		description: `Serenity surrounds you…<br />
-		The Angel's Lair is your family break for four.<br />Treat your
-		loved ones to a paradise whose privacy is uniquely created by
-		nature. Soothe your soul to the sound of the sea rolling in. And
-		share a restful afternoon gazing over the lagoon from the
-		comfort of your private daybed.`,
+		The Angel's Lair is your family break for four.<br/>`,
+		accomodates: `4`,
 		imageDesktop: `../images/desktop/accommodation/twoangels-seaside-accommodation-knysna-western-cape-the-angels-lair.jpg`,
-		imageMobile: `../images/mobile/accommodation/twoangels-garden-route-accommodation-knysna-angels-lair-balcony-daybed-sea-view.jpg`,
-		imageAltText: ``,
+		imageMobile: `../images/mobile/accommodation/twoangels-seaside-accommodation-knysna-western-cape-the-angels-lair.jpg`,
+		imageAltText: `The romantic sea view from the Angel’s Lair  balcony at TwoAngels in Knysna. In the background is a sunny sky, mountains and blue water. In the foreground is a comfortable looking daybed with lots of pillows. The green leaves of a Bougainvillea surround the balcony and frame the view.`,
 		link: `the-angels-lair.html`,
 	},
 
 	{
 		heading: `Family Suite`,
 		description: `Breathtaking beauty is on your doorstep…<br />
-		Family Suite is your unforgettable holiday for six.<br />
-		Savor magnificent sunsets right from your dining room table. Or
-		sink into the comfort of your private daybed and indulge in a
-		book, while listening to your children laughing and playing
-		safely on the beach below.`,
+		Family Suite is your unforgettable holiday for six.`,
+		accomodates: `6`,
+		isPetFriendly: true,
 		imageDesktop: `../images/desktop/accommodation/twoangels-seaside-accommodation-knysna-western-cape-family-suite.jpg`,
-		imageMobile: `../images/mobile/accommodation/twoangels-seaside-family-holiday-accommodation-family-suite-daybed-sea-view01.jpg`,
-		imageAltText: ``,
+		imageMobile: `../images/mobile/accommodation/twoangels-seaside-accommodation-knysna-western-cape-family-suite.jpg`,
+		imageAltText: `A comfortable looking daybed on Family Suite's covered balcony. The bed stands next to large windows that offer a sea view. It looks like the perfect place to relax.`,
 		link: `./family-suite.html`,
 	},
 	{
 		heading: `Luxury Suite`,
 		description: `Comfort envelops you... <br />Luxury Suite is your enchanting
-		holiday for eight.<br />
-		Bronze yourself in the golden summer sun, while relaxing in the
-		deck chairs on your private, sea-facing balcony. Or treat your
-		friends and family to a tantalizing meal, prepared in your state
-		of the art kitchen.`,
+		holiday for eight.`,
+		accomodates: `8`,
 		imageDesktop: `../images/desktop/accommodation/twoangels-seaside-accommodation-knysna-western-cape-luxury-suite.jpg`,
-		imageMobile: `../images/mobile/accommodation/twoangels-seaside-holiday-accommodation-luxury-suite-balcony-01.jpg`,
-		imageAltText: ``,
+		imageMobile: `../images/mobile/accommodation/twoangels-seaside-accommodation-knysna-western-cape-luxury-suite.jpg`,
+		imageAltText: `The TwoAngels Luxury suite dining table on its balcony with its sea view. In the foreground is the table. It contains a wooden chopping board with a freshly sliced loaf of bread and three glasses, each with a varying amount of white wine. In the background is a body of blue water surrounded by mountains and sunny sky.`,
 		link: `./luxury-suite.html`,
 	},
 
 	{
 		heading: `Main House`,
-		description: `Copy writing required...<br />
-		Describe the entire "villa" in atmosphere.<br />
-		Write enticing copy to encourage people to rent the entire
-		property for celebratory occassions etc etc etc`,
+		description: `Dreams do come true...<br />
+		Main House is your unforgetable holiday for fourteen.`,
+		accomodates: `14`,
 		imageDesktop: `../images/desktop/accommodation/twoangels-seaside-accommodation-knysna-western-cape.jpg`,
 		imageMobile: `../images/mobile/accommodation/twoangels-seaside-accommodation-knysna-western-cape.jpg`,
-		imageAltText: ``,
+		imageAltText: `TwoAngels guest house on the water's edge. The house is set into a backdrop of trees. It has a tanned wooden facade with a sky blue roof and windows. At the base of the house is a stone wall with a jetty that leads into a body of blue water.`,
 		link: `main-house.html`,
 	},
 ];
@@ -107,6 +88,56 @@ const createCard = () => {
 			</div>
 			<img class="card__image" src="${card.imageMobile}" alt="${card.imageAltText}" />
 			<p class="card__description" >${card.description}</p>
+			<ul class ="card__icon-list">
+				<li class="card__icon-list-item">
+				<img
+				class="card__icon"
+				src="icons/person-icon.svg"
+				alt=""
+			/>
+			<p class="card__icon-description">Accomodates: ${card.accomodates}</p>
+				</li>
+				<li class="card__icon-list-item">
+				<img
+				class="card__icon"
+				src="icons/sea-view-icon.svg"
+				alt=""
+			/>
+			<p class="card__icon-description">Sea Facing</p>
+				</li>
+				
+				</li>
+				</li>
+				<li class="card__icon-list-item">
+				<img
+				class="card__icon"
+				src="icons/tea-and-coffee-icon.svg"
+				alt=""
+			/>
+			<p class="card__icon-description">Self Catering</p>
+				</li>
+				</li>
+				${
+					card.isPetFriendly
+						? `
+				<li class="card__icon-list-item">
+				  <img class="card__icon" src="icons/pet-friendly-icon.svg" alt="" />
+				  <p class="card__icon-description">Pet Friendly</p>
+				</li>
+			  `
+						: ""
+				}
+				<li class="card__icon-list-item">
+				<img
+				class="card__icon"
+				src="icons/kayak-icon.svg"
+				alt=""
+			/>
+			<p class="card__icon-description">Kayak</p>
+				</li>
+				
+			 </ul>
+			</div>
 			`;
 			suitesAndCottagesCardContainer.appendChild(suitesAndCottagesCard);
 		});
@@ -116,27 +147,76 @@ const createCard = () => {
 			suitesAndCottagesCard.classList.add("card", "suites-and-cottages__card");
 			suitesAndCottagesCard.setAttribute("href", `${card.link}`);
 			suitesAndCottagesCard.innerHTML = `
-			<img class="card__image" src="${card.imageDesktop}" alt="${card.imageAltText}" . />
+			<img class="card__image" src="${card.imageDesktop}" alt="${
+				card.imageAltText
+			}" . />
 			<div class="card__text-wrapper">
+			<div>
 			<h3 class="card__heading" >${card.heading}</h3>
 			<p class="card__description" >${card.description}</p>
 			</div>
+			<ul class ="card__icon-list">
+			<li class="card__icon-list-item">
+			<img
+			class="card__icon"
+			src="icons/person-icon.svg"
+			alt=""
+		/>
+		<p class="card__icon-description">Accomodates: ${card.accomodates}</p>
+			</li>
+			<li class="card__icon-list-item">
+			<img
+			class="card__icon"
+			src="icons/sea-view-icon.svg"
+			alt=""
+		/>
+		<p class="card__icon-description">Sea Facing</p>
+			</li>
+			</li>
+			</li>
+			<li class="card__icon-list-item">
+			<img
+			class="card__icon"
+			src="icons/tea-and-coffee-icon.svg"
+			alt=""
+		/>
+		<p class="card__icon-description">Self Catering</p>
+			</li>
+			</li>
+			${
+				card.isPetFriendly
+					? `
+			<li class="card__icon-list-item">
+			  <img class="card__icon" src="icons/pet-friendly-icon.svg" alt="" />
+			  <p class="card__icon-description">Pet Friendly</p>
+			</li>
+		  `
+					: ""
+			}
+			<li class="card__icon-list-item">
+			<img
+			class="card__icon"
+			src="icons/kayak-icon.svg"
+			alt=""
+		/>
+		<p class="card__icon-description">Kayak</p>
+			</li>
+			
+		 </ul>
+			</div>
 			`;
+
 			suitesAndCottagesCardContainer.appendChild(suitesAndCottagesCard);
 		});
 	}
 };
-
 createCard();
-//SUITES AND COTTAGES CLOSE
-
-//TESTIMONIAL CAROUSEL OPEN
-const testimonialIndicators = document.querySelectorAll(".testimonials__progress-indicator"); //prettier-ignore
+const testimonialIndicators = document.querySelectorAll(".testimonials-section__progress-indicator"); //prettier-ignore
 testimonialIndicators.forEach((indicator, index) => {
 	indicator.addEventListener("click", (e) => {
-		const indicators = document.querySelector(".testimonials__progress-indicators"); //prettier-ignore
+		const indicators = document.querySelector(".testimonials-section__progress-indicators"); //prettier-ignore
 		const activeIndicator = indicators.querySelector("[data-active]");
-		const slides = document.querySelector(".testimonials__slides");
+		const slides = document.querySelector(".testimonials-section__slides");
 		const activeSlide = slides.querySelector("[data-active]");
 
 		if (activeIndicator.dataset.indicatorPosition != index) {
@@ -147,13 +227,13 @@ testimonialIndicators.forEach((indicator, index) => {
 		}
 	});
 });
-const testimonialCarouselButtons = document.querySelectorAll(".testimonials__button"); //prettier-ignore
+const testimonialCarouselButtons = document.querySelectorAll(".testimonials-section__button"); //prettier-ignore
 testimonialCarouselButtons.forEach((button) => {
 	button.addEventListener("click", () => {
 		const buttonValue = button.dataset.carouselButton === "next" ? 1 : -1;
-		const slides = document.querySelector(".testimonials__slides");
+		const slides = document.querySelector(".testimonials-section__slides");
 		const activeSlide = slides.querySelector("[data-active]");
-		const indicators = document.querySelector(".testimonials__progress-indicators"); //prettier-ignore
+		const indicators = document.querySelector(".testimonials-section__progress-indicators"); //prettier-ignore
 		const activeIndicator = indicators.querySelector("[data-active]");
 
 		let newIndex = [...slides.children].indexOf(activeSlide) + buttonValue;
@@ -172,7 +252,7 @@ testimonialCarouselButtons.forEach((button) => {
 	});
 });
 $(function () {
-	$(".testimonials__slides").swipe({
+	$(".testimonials-section__slides").swipe({
 		swipe: function (
 			event,
 			direction,
@@ -187,23 +267,24 @@ $(function () {
 			} else if (direction === "right") {
 				directionValue = -1;
 			}
-			const slides = this[0].querySelectorAll(".testimonials__slide");
-			const activeSlide = this[0].querySelector("[data-active]");
-			const indicators = document.querySelector(".testimonials__progress-indicators"); //prettier-ignore
+			const slides = document.querySelector(".testimonials-section__slides");
+			const activeSlide = slides.querySelector("[data-active]");
+			const indicators = document.querySelector(".testimonials-section__progress-indicators"); //prettier-ignore
 			const activeIndicator = indicators.querySelector("[data-active]");
 
-			slides.forEach((slide, index) => {
-				if (activeIndicator.dataset.indicatorPosition != index) {
-					indicators.children[index].dataset.active = "true";
-					slides[index].dataset.active = "true";
-					delete activeIndicator.dataset.active;
-					delete activeSlide.dataset.active;
-				}
-			});
+			let newIndex = [...slides.children].indexOf(activeSlide) + directionValue;
+
+			if (newIndex < 0) {
+				newIndex = slides.children.length - 1;
+			}
+			if (newIndex >= slides.children.length) {
+				newIndex = 0;
+			}
+
+			slides.children[newIndex].dataset.active = true;
+			indicators.children[newIndex].dataset.active = true;
+			delete activeSlide.dataset.active;
+			delete activeIndicator.dataset.active;
 		},
 	});
 });
-
-//TESTIMONIAL CLOSE
-console.log("width:", window.innerWidth);
-console.log("height:", window.innerHeight);
