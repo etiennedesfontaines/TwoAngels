@@ -237,6 +237,12 @@
 	&__description {
 		max-width: $measure-body-copy;
 		margin-bottom: $spacing-l;
+		&--cta {
+			color: $dark-blue;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 	&__image {
 		width: 100%;
