@@ -59,7 +59,6 @@
 		line-height: 0;
 		@include elevation-1dp;
 		transition: all 0.15s ease-in-out;
-		// @include elevation-1dp-new;
 
 		&:hover {
 			@media (hover: hover) {
@@ -67,6 +66,9 @@
 				@include elevation-8dp;
 			}
 		}
+		// &__image {
+
+		// }
 		&__text-wrapper {
 			position: absolute;
 			inset: 0;
