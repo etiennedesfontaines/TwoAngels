@@ -133,7 +133,7 @@ const createCard = () => {
 				src="icons/kayak-icon.svg"
 				alt=""
 			/>
-			<p class="card__icon-description">Kayak</p>
+			<p class="card__icon-description">Kayaks</p>
 				</li>
 				
 			 </ul>
@@ -199,7 +199,7 @@ const createCard = () => {
 			src="icons/kayak-icon.svg"
 			alt=""
 		/>
-		<p class="card__icon-description">Kayak</p>
+		<p class="card__icon-description">Kayaks</p>
 			</li>
 			
 		 </ul>

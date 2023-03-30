@@ -8,6 +8,7 @@
   - The other issue is likely that the images are all sized for desktop, so
     it will likely be a good optimisation to create a device detection function and serve different sized images depending on the device.
 - data submission handling
+  - Data is being successfully submitted to netlify, I'm just uncertain how to get it from there to my Fathers email address...
 - Changing Domain Name (How to get current site deployed at TwoAngels.co.za)
   - How is the domain served?
 
