@@ -2,11 +2,16 @@
 
 - Optimise images - check speed
 - Mobile is even slower than desktop:
+
   - I think one of the main issues is that image size has not been specified
     So the page is not making space for the image before the inital paint,
-    and the calculation of the size is what is causing the slow response
+    and the calculation of the size is what is causing the slow response.
+    Definitive sizing helps prevent layout shift but images still load really slowly.
+    I think it is a result of all images loading at once rather than a lazy loading affect - Perhpas loading the first carousel image and then the rest will help to resolve this?
+
   - The other issue is likely that the images are all sized for desktop, so
     it will likely be a good optimisation to create a device detection function and serve different sized images depending on the device.
+
 - data submission handling
   - Data is being successfully submitted to netlify, I'm just uncertain how to get it from there to my Fathers email address...
 - Changing Domain Name (How to get current site deployed at TwoAngels.co.za)

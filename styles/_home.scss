@@ -67,6 +67,8 @@
 			}
 		}
 		&__image {
+			// width: 100%;
+			// height: auto;
 			width: 70.4rem;
 			height: 45.6rem;
 		}
@@ -195,7 +197,6 @@
 	&__heading {
 		font-size: 3.2rem;
 		padding: 0;
-		// line-height: normal;
 	}
 	&__quote {
 		display: block;
@@ -248,6 +249,8 @@
 		}
 	}
 	&__image {
+		// width: 100%;
+		// height: auto;
 		width: 142.5rem;
 		height: 75.208rem;
 		border-radius: $border-radius;
