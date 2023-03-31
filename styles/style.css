@@ -287,8 +287,8 @@ ul {
   }
 }
 .suites-and-cottages-section .card__image {
-  width: 70.4rem;
-  height: 45.6rem;
+  width: 100%;
+  height: auto;
 }
 .suites-and-cottages-section .card__text-wrapper {
   position: absolute;
@@ -457,8 +457,8 @@ ul {
   text-decoration: underline;
 }
 .activities-section__image {
-  width: 142.5rem;
-  height: 75.208rem;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -534,8 +534,8 @@ ul {
 }
 .image-carousel__image {
   display: block;
-  width: 142.5rem;
-  height: 75.208rem;
+  width: 100%;
+  height: auto;
 }
 .image-carousel__button {
   position: absolute;
