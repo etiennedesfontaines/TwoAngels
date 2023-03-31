@@ -8,6 +8,7 @@
 		<script src="./custom-html-elements/navBar.js" defer></script>
 		<script src="./scripts/hamburgerMenu.js" defer></script>
 		<script src="./scripts/navigationSignifier.js" defer></script>
+		<script src="./scripts/lazyImage.js" defer></script>
 		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 		<script
 			type="text/javascript"
@@ -76,7 +77,7 @@
 						<ol class="image-carousel__slides">
 							<li class="image-carousel__slide" data-active>
 								<img
-									class="image-carousel__image carousel-image-1"
+									class="image-carousel__image image-carousel__image--first"
 									src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-sea-view-bed.jpg"
 									width="1425"
 									height="752.08"
@@ -86,7 +87,7 @@
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-bed.jpg"
+									data-src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-bed.jpg"
 									width="1425"
 									height="752.08"
 									loading="lazy"
@@ -96,7 +97,7 @@
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-fire-place-bed.jpg"
+									data-src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-fire-place-bed.jpg"
 									width="1425"
 									height="752.08"
 									loading="lazy"
@@ -106,7 +107,7 @@
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-kitchenette.jpg"
+									data-src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-kitchenette.jpg"
 									width="1425"
 									height="752.08"
 									loading="lazy"
@@ -116,7 +117,7 @@
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-bathroom.jpg"
+									data-src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-bathroom.jpg"
 									width="1425"
 									height="752.08"
 									loading="lazy"
@@ -126,7 +127,7 @@
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-sea-view-balcony.jpg"
+									data-src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-sea-view-balcony.jpg"
 									width="1425"
 									height="752.08"
 									loading="lazy"
@@ -136,7 +137,7 @@
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-sea-view.jpg"
+									data-src="./images/desktop/accommodation/cottages/lovers-nest/twoangels-honeymoon-accommodation-lovers-nest-sea-view.jpg"
 									width="1425"
 									height="752.08"
 									loading="lazy"
