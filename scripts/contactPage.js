@@ -6,7 +6,6 @@ const handleSubmit = (event) => {
 
 	const myForm = event.target;
 	const formData = new FormData(myForm);
-	console.log(myForm);
 
 	fetch("/", {
 		method: "POST",
@@ -14,7 +13,6 @@ const handleSubmit = (event) => {
 		body: new URLSearchParams(formData).toString(),
 	})
 		.then(() => {
-			console.log(formData);
 			form.classList.add("contact-form--submitted");
 			const submitted = document.createElement("h3");
 			submitted.innerHTML = "Submission Successful";
