@@ -86,9 +86,11 @@ const createCard = () => {
 			<div class="card__banner">
 			<h3 class="card__heading" >${card.heading}</h3>
 			</div>
-			<img class="card__image" src="${
-				card.imageMobile
-			}" width="396" height="270" alt="${card.imageAltText}" />
+			<img class="card__image" src="${card.imageMobile}" 
+			width="396" 
+			height="270" 
+			loading="lazy" 
+			alt="${card.imageAltText}" />
 			<p class="card__description" >${card.description}</p>
 			<ul class ="card__icon-list">
 				<li class="card__icon-list-item">
@@ -149,9 +151,11 @@ const createCard = () => {
 			suitesAndCottagesCard.classList.add("card", "suites-and-cottages__card");
 			suitesAndCottagesCard.setAttribute("href", `${card.link}`);
 			suitesAndCottagesCard.innerHTML = `
-			<img class="card__image" src="${
-				card.imageDesktop
-			}" width="704" height="456" alt="${card.imageAltText}"/>
+			<img class="card__image" src="${card.imageDesktop}" 
+			width="704" 
+			height="456" 
+			loading="lazy" 
+			alt="${card.imageAltText}"/>
 			<div class="card__text-wrapper">
 			<div>
 			<h3 class="card__heading" >${card.heading}</h3>

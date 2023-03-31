@@ -634,8 +634,8 @@ ul {
 }
 .activities-page__image {
   margin-top: 4.8rem;
-  width: 142.5rem;
-  height: 75.208rem;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
