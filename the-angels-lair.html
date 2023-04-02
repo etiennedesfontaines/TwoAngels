@@ -8,6 +8,7 @@
 		<script src="./custom-html-elements/navBar.js" defer></script>
 		<script src="./scripts/hamburgerMenu.js" defer></script>
 		<script src="./scripts/navigationSignifier.js" defer></script>
+		<script src="./scripts/lazyImage.js" defer></script>
 		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 		<script
 			type="text/javascript"
@@ -72,8 +73,8 @@
 						<ol class="image-carousel__slides">
 							<li class="image-carousel__slide" data-active>
 								<img
-									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/the-angels-lair/twoangels-garden-route-accommodation-knysna-angels-lair-balcony-daybed-sea-view.jpg"
+									class="image-carousel__image image-carousel__image--first"
+									data-src="./images/desktop/accommodation/suites/the-angels-lair/twoangels-garden-route-accommodation-knysna-angels-lair-balcony-daybed-sea-view.jpg"
 									width="1425"
 									height="752.08"
 									alt="The romantic sea view from the Angel’s Lair balcony at TwoAngels in Knysna. In the background is a sunny sky, mountains and blue water. In the foreground is a comfortable looking daybed with lots of pillows. The green leaves of a Bougainvillea surround the balcony and frame the view."
@@ -82,70 +83,63 @@
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/the-angels-lair/bedrooms/master-bedroom/twoangels-garden-route-accommodation-knysna-angels-lair-master-bedroom.jpg"
+									data-src="./images/desktop/accommodation/suites/the-angels-lair/bedrooms/master-bedroom/twoangels-garden-route-accommodation-knysna-angels-lair-master-bedroom.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The Angel’s Lair master bedroom. It has a double bed and a sea view. The bed runs along a large, sea facing window. At the head of the bed is a leopard print wall with a small mirror hung at its center. A crystal chandelier hangs above the bed. Decorative rugs bring color to the carpeted floor."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/the-angels-lair/bedrooms/master-bedroom/twoangels-garden-route-accommodation-knysna-angels-lair-master-bedroom-view.jpg"
+									data-src="./images/desktop/accommodation/suites/the-angels-lair/bedrooms/master-bedroom/twoangels-garden-route-accommodation-knysna-angels-lair-master-bedroom-view.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="Looking out of the Angel's Lair master bedroom and onto the terrace."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/the-angels-lair/bedrooms/guest-bedroom/twoangels-garden-route-accommodation-knysna-angels-lair-guest-bedroom-beds.jpg"
+									data-src="./images/desktop/accommodation/suites/the-angels-lair/bedrooms/guest-bedroom/twoangels-garden-route-accommodation-knysna-angels-lair-guest-bedroom-beds.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The Angel's Lair guest bedroom. There are two single beds. The beds are placed against opposite walls and dressed in grey, crimson and blue. A window brings natural light streaming into the room. A wooden bedside table holding two reading lamps stands between the beds. An intricate silver mirror above it reflects the opposite side of the room."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/the-angels-lair/twoangels-garden-route-accommodation-knysna-angels-lair-living-room.jpg"
+									data-src="./images/desktop/accommodation/suites/the-angels-lair/twoangels-garden-route-accommodation-knysna-angels-lair-living-room.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The Angel’s Lair has a cozy, open plan living room with a sea view. Three couches face into the center of the room. They look onto a wall with a built-in fireplace. There is a carpet beneath them. Double french doors lead out onto a sun lit balcony. There is a sea of blue water beyond the balcony."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/the-angels-lair/twoangels-garden-route-accommodation-knysna-angels-lair-kitchen.jpg"
+									data-src="./images/desktop/accommodation/suites/the-angels-lair/twoangels-garden-route-accommodation-knysna-angels-lair-kitchen.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The fully equipped open plan kitchen and dining area of The Angel’s Lair. The dining table stands at the centre of the room. A built in L-shaped wooden surface with installed basin, gas-hob and oven skirts two red mosaic tiled walls. Natural light streams into the room through surrounding doors and windows."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/the-angels-lair/twoangels-garden-route-accommodation-knysna-angels-lair-bathroom.jpg"
+									data-src="./images/desktop/accommodation/suites/the-angels-lair/twoangels-garden-route-accommodation-knysna-angels-lair-bathroom.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The Angel’s Lair bathroom with basin, toilet and shower. The walls are decorated in turquoise blue mosaic tiles. Large mirrors make the bathroom feel spacious. The floors are wooden. A crystal chandelier hangs from the center of the ceiling. A charming rattan weave laundry basket stands beside the basin. "
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/the-angels-lair/twoangels-garden-route-accommodation-knysna-angels-lair-courtyard-daybed.jpg"
+									data-src="./images/desktop/accommodation/suites/the-angels-lair/twoangels-garden-route-accommodation-knysna-angels-lair-courtyard-daybed.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The Angel’s Lair covered terrace. It has warm, natural light and lots of beautiful plants. Two couches face one another from opposite sides of the terrace. The walls are stone clad and decorated with wood carved African art works. "
 								/>
 							</li>
