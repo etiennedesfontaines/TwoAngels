@@ -230,7 +230,7 @@ ul {
 .hero-section {
   height: 100vh;
   position: relative;
-  background-image: url(../images/desktop/background/hero/hero-01.jpg);
+  background-image: url(../images/desktop/background/hero/hero.jpg);
   background-size: cover;
   background-position: bottom;
   margin-bottom: 9.6rem;
@@ -1047,7 +1047,7 @@ ul {
     margin-top: 6.4rem;
     display: flex;
     flex-direction: column;
-    background-image: url(../images/tablet/background/angels-footer-bg-01.svg);
+    background-image: url(../images/tablet/background/angels-footer-bg-portrait.svg);
     background-repeat: no-repeat;
   }
   .footer__content-container {
@@ -1214,7 +1214,7 @@ ul {
     padding: 0.8rem 0rem 0.2rem 0rem;
   }
   .hero-section {
-    background-image: url(../images/mobile/background/hero/hero-01.jpg);
+    background-image: url(../images/mobile/background/hero/hero-portrait.jpg);
     background-position: center;
     margin-bottom: 4.8rem;
   }
@@ -1374,7 +1374,7 @@ ul {
   }
   .contact-page__form-wrapper {
     margin-top: 2.4rem;
-    background-image: url(../images/mobile/background/contact-form-image-mobile.jpg);
+    background-image: url(../images/mobile/background/contact-form.jpg);
   }
   .contact-form {
     gap: 2.4rem;
@@ -1399,7 +1399,7 @@ ul {
 }
 @media screen and (max-height: 414px) and (orientation: landscape) {
   .hero-section {
-    background-image: url(../images/mobile/hero/hero-landscape.jpg);
+    background-image: url(../images/mobile/background/hero/hero-landscape.jpg);
   }
   .hero-section__text {
     opacity: 0;
