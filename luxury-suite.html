@@ -8,6 +8,7 @@
 		<script src="./custom-html-elements/navBar.js" defer></script>
 		<script src="./scripts/hamburgerMenu.js" defer></script>
 		<script src="./scripts/navigationSignifier.js" defer></script>
+		<script src="./scripts/lazyImage.js" defer></script>
 		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 		<script
 			type="text/javascript"
@@ -83,8 +84,8 @@
 						<ol class="image-carousel__slides">
 							<li class="image-carousel__slide" data-active>
 								<img
-									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-balcony-01.jpg"
+									class="image-carousel__image image-carousel__image--first"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-balcony-01.jpg"
 									width="1425"
 									height="752.08"
 									alt="The TwoAngels Luxury suite dining table on its balcony with its sea view. In the foreground is the table. It contains a wooden chopping board with a freshly sliced loaf of bread and three glasses, each with a varying amount of white wine. In the background is a body of blue water surrounded by mountains and sunny sky."
@@ -93,94 +94,86 @@
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accommodation-luxury-suite-sea-view.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accommodation-luxury-suite-sea-view.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The tranquil feeling Luxury Suite living room with its sea view. In the background is a body of blue water. It's visible through an open window that stretches the length of the entire room. Natural light pours into the room and onto couches with lots of pillows. Thriving pot plants grow next to the couches. A thin linen curtain softens the light."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-living-room-02.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-living-room-02.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The Luxury Suite living room. It offers an exceptional sea view. Large sliding windows allow natural light and fresh air into the room. Healthy pot plants bring nature into the room. Comfortable looking couches create lots of space to relax."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-living-room-01.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-living-room-01.jpg"
 									alt="Natural light floods into the Luxury Suite living room. It enters through a large sliding window. Beautiful pot plants bring life to the room. Comfortable looking couches packed with pillows offer space to relax. A piano stands against one wall of the room."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-kitchen-02.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-kitchen-02.jpg"
 									alt="The beautiful, fully equipped Luxury Suite kitchen. It has a gas stove and dining table. The stove is olive green with brass finishes."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-kitchen-01.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-kitchen-01.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The large TwoAngels Luxury suite kitchen. It is surrounded by windows that fill it with a warm, natural light. A wooden dining table surrounded by benches and chairs is set to the one side. Pot plants and bowls of fresh fruit pop with colour. Surfaces painted green, blue and saffron compliment the sea and mountain beyond the windows."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-tv-room.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-tv-room.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The Luxury Suite TV room. A smart TV is surrounded by big, comfortable looking couches. The surrounding room is decorated with landscape paintings, sculptures and a crystal chandelier."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-dining-room-01.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-dining-room-01.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The Luxury Suite dining room with its large wooden table next to its stone fireplace. Two matching wooden benches run the length of the table. At each head is a wrought iron chair. Landscape paintings hang on the surrounding saffron coloured walls. The floor is wooden with areas covered by decorative rugs."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-entrance.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-entrance.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The back entrance to the TwoAngels Luxury Suite. Light spills into the suite through the open green-olive coloured door."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-balcony-daybed-01.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-balcony-daybed-01.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The daybed on the Luxury Suite balcony. It is covered by sapling weaved roof that allows through dappled light. The light falls onto the burnt oranges and blues of the bed and all its pillows. It looks like a great place to relax with a book or take a nap."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-garden-01.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/twoangels-seaside-holiday-accomodation-luxury-suite-garden-01.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The TwoAngels garden blossoms with jasmine flowers, lavender bushes, ferns and begonias. A bed of pebbles with a walkway made from wooden planks runs through the middle of the garden. The walkway ends at the entrance to the Luxury Suite."
 								/>
 							</li>
@@ -348,51 +341,46 @@
 						<ol class="image-carousel__slides">
 							<li class="image-carousel__slide" data-active>
 								<img
-									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-bed.jpg"
+									class="image-carousel__image image-carousel__image--first"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-bed.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The Luxury Suite Sunset bedroom. Blue walls surround a double bed. At the head of the bed are three decorative rose pillows. A large wrought iron cross hangs on the wall behind the bed."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-daybed-sea-view.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-daybed-sea-view.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The private deck of the Sunset bedroom. On the deck is a daybed with a sea view. It’s late afternoon and the sun is setting. The sky is orange, yellow and blue. The water below reflects the colours in the sky."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-dresser.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-dresser.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="A dark wooden dresser with a mirror stands in the corner of  the blue walled Sunset bedroom. On the dresser is a vase of fynbos and two carved angel candelabras."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-en-suite-bathroom-01.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-en-suite-bathroom-01.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="Looking through a doorway at the mirror and basin in a turquoise and blue bathroom. It is the en-suite bathroom of the Sunset bedroom."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-en-suite-bathroom-02.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/sunset-room/twoangels-seaside-holiday-accomodation-luxury-suite-sunset-bedroom-en-suite-bathroom-02.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The en-suite bathroom of the Sunset bedroom has green walls decorated with landscape paintings. There is an open window behind the toilet, and an enormous mirror on the wall above the bath. A decorative rug runs the length of the wooden floor."
 								/>
 							</li>
@@ -530,7 +518,7 @@
 						<ol class="image-carousel__slides">
 							<li class="image-carousel__slide" data-active>
 								<img
-									class="image-carousel__image"
+									class="image-carousel__image image-carousel__image--first"
 									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-sea-view.jpg"
 									width="1425"
 									height="752.08"
@@ -541,30 +529,27 @@
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-daybed-01.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-daybed-01.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="Sun cascading onto the charming Madonna bedroom daybed. A wooden framed sailing boat is hung on the wall behind the bed."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-bed.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-bed.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The Madonna bedroom, bright with natural light. A wooden chair with a green cushioned seat stands near the window. The double bed is dressed in blue, gray and crimson bedding. The floors are wooden and decorated by patterned rugs."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-en-suite-bathroom.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/madonna-room/twoangels-seaside-holiday-accomodation-luxury-suite-madonna-bedroom-en-suite-bathroom.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="Madonna bedroom’s en-suite bathroom. It is quaint, painted green and blue and filled with natural light. A flourishing fern stands near the open window. The basin is set into a wooden cabinet. A mirror above the basin reflects the frame of the window."
 								/>
 							</li>
@@ -704,7 +689,7 @@
 						<ol class="image-carousel__slides">
 							<li class="image-carousel__slide" data-active>
 								<img
-									class="image-carousel__image"
+									class="image-carousel__image image-carousel__image--first"
 									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-sea-view.jpg"
 									width="1425"
 									height="752.08"
@@ -715,30 +700,27 @@
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-bed.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-bed.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The double bed in The Cavalry bedroom. The room is bright and natural light from the windows."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-daybed.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-daybed.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The Cavalry bedroom's daybed with its sea view."
 								/>
 							</li>
 							<li class="image-carousel__slide">
 								<img
 									class="image-carousel__image"
-									src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-en-suite-bathroom.jpg"
+									data-src="./images/desktop/accommodation/suites/luxury-suite/bedrooms/cavalry-room/twoangels-seaside-holiday-accomodation-luxury-suite-cavalry-bedroom-en-suite-bathroom.jpg"
 									width="1425"
 									height="752.08"
-									loading="lazy"
 									alt="The cavalry bedroom's en-suite bathroom."
 								/>
 							</li>
