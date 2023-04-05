@@ -1,0 +1,14 @@
+{
+  "name": "send-email",
+  "version": "1.0.0",
+  "description": "send a transactional email",
+  "main": "send-email.js",
+  "scripts": {
+    "test": "test send-email"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sib-api-v3-sdk": "^8.5.0"
+  }
+}

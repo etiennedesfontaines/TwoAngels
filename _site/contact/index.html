@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/styles/style.css" />
+		<script src="./custom-html-elements/navBar.js" defer></script>
+		<script src="./scripts/hamburgerMenu.js" defer></script>
+		<script src="./scripts/navigationSignifier.js" defer></script>
+		<script src="./scripts/contactPage.js" defer></script>
+		<script src="./custom-html-elements/customFooter.js" defer></script>
+		<meta
+			name="description"
+			content="Contact TwoAngels - seaside accommodation, Knysna, Western Cape. Accommodation enquires, bookings, weddings, honeymoon cottages, family holidays, pet friendly accommodation."
+		/>
+		<title>Contact TwoAngels - Water's edge accommodation in Knysna.</title>
+	</head>
+	<nav-bar></nav-bar>
+	<body>
+		<main class="contact-page main-content" data-main-content="Contact Page">
+			<h1>Contact Us</h1>
+			<p>
+				If you have any questions about TwoAngels, please feel free to give us a
+				call or send us a message.
+			</p>
+			<div class="contact-page__form-wrapper">
+				<div class="contact-page__form-background-gradient"></div>
+				<form
+					class="contact-form contact-page__contact-form"
+					name="contact-form"
+					method="POST"
+					data-netlify="true"
+				>
+					<label class="contact-form__input-label" for="name">
+						<input
+							class="contact-form__input"
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Name"
+							required
+						/>
+					</label>
+					<label class="contact-form__input-label" for="email">
+						<input
+							class="contact-form__input"
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Email"
+							required
+						/>
+					</label>
+					<label class="contact-form__input-label" for="tel">
+						<input
+							class="contact-form__input"
+							type="tel"
+							id="tel"
+							name="tel"
+							placeholder="Contact Number"
+						/>
+					</label>
+					<label class="contact-form__input-label" for="message">
+						<textarea
+							class="contact-form__input"
+							name="message"
+							id="message"
+							cols="20"
+							rows="1"
+							placeholder="Message"
+						></textarea>
+					</label>
+
+					<label class="contact-form__input-label" for="privacy-policy">
+						<input
+							class="contact-form__input"
+							type="checkbox"
+							id="privacy-policy"
+							name="privacy-policy"
+							value="I agree to the processing of my personal data"
+							required
+						/>
+						<div>
+							I have read the
+							<a class="contact-form__privacy-policy-link" href="#">
+								privacy policy
+							</a>
+							and I give consent to the processing of my personal data.
+						</div>
+					</label>
+
+					<div class="contact-form__last-row">
+						<input
+							class="contact-form__submission-button"
+							type="submit"
+							value="Submit"
+						/>
+						<address>
+							<a
+								class="contact-info"
+								href="tel:+27&nbsp;082&nbsp;820&nbsp;9246"
+							>
+								<span class="contact-info__content">
+									<img
+										class="contact-form__icon"
+										src="./icons/phone-icon.svg"
+										alt=""
+									/>+27(0)82-820-9246
+								</span>
+							</a>
+						</address>
+					</div>
+				</form>
+			</div>
+		</main>
+		<custom-footer></custom-footer>
+	</body>
+</html>

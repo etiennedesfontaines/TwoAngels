@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/styles/style.css" />
+		<script src="./custom-html-elements/navBar.js" defer></script>
+		<script src="./scripts/hamburgerMenu.js" defer></script>
+		<script src="./scripts/navigationSignifier.js" defer></script>
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script
+			type="text/javascript"
+			src="./scripts/jquery.touchSwipe.min.js"
+			defer
+		></script>
+		<script src="./scripts/homePage.js" defer></script>
+		<script src="./custom-html-elements/customFooter.js" defer></script>
+		<meta
+			name="description"
+			content="Picturesque seaside accommodation in Knysna. Situated on the water's edge, this is the perfect destination for family holidays and honeymoon vacations."
+		/>
+		<title>TwoAngels - Seaside accommodation in knysna, Western Cape</title>
+	</head>
+	<body>
+		<nav-bar class="nav-bar"></nav-bar>
+
+		<main class="main-content" data-main-content="Home Page">
+			<section class="hero-section">
+				<div class="hero-section__background-gradient"></div>
+				<header class="hero-section__content">
+					<div class="hero-section__text">
+						<h1 class="hero-section__heading">
+							TwoAngels
+							<span class="hero-section__subheading"
+								>Water's Edge Guest House and Cottages</span
+							>
+						</h1>
+					</div>
+					<div class="buttons">
+						<button class="button button--primary">
+							<a
+								class="button__link button__link--primary"
+								href="https://book.nightsbridge.com/15693"
+								target="_blank"
+							>
+								Book your dream holiday</a
+							>
+						</button>
+						<button class="button">
+							<a class="button__link" href=".suites-and-cottages">
+								Browse Accomodation...</a
+							>
+						</button>
+					</div>
+				</header>
+			</section>
+			<section class="suites-and-cottages-section">
+				<h2>Suites and Cottages</h2>
+				<div class="suites-and-cottages-section__card-container"></div>
+			</section>
+
+			<aside class="testimonials-section">
+				<button
+					class="testimonials-section__button testimonials-section__button--prev"
+					data-carousel-button="prev"
+				>
+					<img src="./icons/chevron-back-circle-outline.svg" alt="" />
+				</button>
+				<button
+					class="testimonials-section__button testimonials-section__button--next"
+					data-carousel-button="next"
+				>
+					<img src="./icons/chevron-forward-circle-outline.svg" alt="" />
+				</button>
+				<ol class="testimonials-section__slides">
+					<li class="testimonials-section__slide" data-active>
+						<img
+							class="testimonials-section__profile-image"
+							src="./icons/profile-icon.svg"
+							alt=""
+						/>
+						<img
+							class="testimonials-section__stars-image"
+							src="./icons/five-stars.svg"
+							alt=""
+						/>
+						<div class="testimonials-section__text-wrapper">
+							<h2 class="testimonials-section__heading">
+								Amazing time at TwoAngels
+							</h2>
+							<q class="testimonials-section__quote">
+								This has been one of my best travel experiences. The Location is
+								one of the best even compared to my Caribbean holidays. Two
+								angels has a very serene atmosphere, the private beach is just
+								amazing.
+							</q>
+							<p>- msarai | Trip Advisor</p>
+						</div>
+					</li>
+					<li class="testimonials-section__slide">
+						<img
+							class="testimonials-section__profile-image"
+							src="./icons/profile-icon.svg"
+							alt=""
+						/>
+						<img
+							class="testimonials-section__stars-image"
+							src="./icons/five-stars.svg"
+							alt=""
+						/>
+						<div class="testimonials-section__text-wrapper">
+							<h2 class="testimonials-section__heading">
+								Romantic, Cosy, Beautiful Views
+							</h2>
+							<q class="testimonials-section__quote">
+								Cosy, private room with fireplace, amazing views and only a few
+								steps from the balcony to the beach. You could hear the waves
+								from the bed and watch the sunset from the secluded balcony.
+							</q>
+							<p>- Trusha, Trip Advisor</p>
+						</div>
+					</li>
+					<li class="testimonials-section__slide">
+						<img
+							class="testimonials-section__profile-image"
+							src="./icons/profile-icon.svg"
+							alt=""
+						/>
+						<img
+							class="testimonials-section__stars-image"
+							src="./icons/five-stars.svg"
+							alt=""
+						/>
+						<div class="testimonials-section__text-wrapper">
+							<h2 class="testimonials-section__heading">Beautiful!</h2>
+							<q class="testimonials-section__quote">
+								An absolutely beautiful place to stay. The location was spot on.
+								Probably the best in town. We could have stayed longer, but all
+								good things need to come to an end. Thanks Robert. You were
+								wonderful!!
+							</q>
+							<p>- joolskey, Trip Advisor</p>
+						</div>
+					</li>
+				</ol>
+				<ol class="testimonials-section__progress-indicators">
+					<li
+						class="testimonials-section__progress-indicator"
+						data-indicator-position="0"
+						data-active
+					></li>
+					<li
+						class="testimonials-section__progress-indicator"
+						data-indicator-position="1"
+					></li>
+					<li
+						class="testimonials-section__progress-indicator"
+						data-indicator-position="2"
+					></li>
+				</ol>
+			</aside>
+			<div class="buttons">
+				<button class="button button--primary">
+					<a
+						class="button__link button__link--primary"
+						href="https://book.nightsbridge.com/15693"
+						target="_blank"
+					>
+						Book your dream holiday</a
+					>
+				</button>
+				<button class="button">
+					<a class="button__link" href="./contact.html"> Get in touch...</a>
+				</button>
+			</div>
+			<section class="activities-section">
+				<h2>Activities</h2>
+
+				<p class="activities-section__description">
+					Looking for adventure? Relaxation? Culture?
+					<br />
+					Whatever your interests may be, Knysna has you covered.
+					<br />
+					<br />
+					Whether you're a nature lover or a foodie, a thrill-seeker or someone
+					who prefers a more laid-back experience, there's something for
+					everyone in this picturesque town. Take a hike through the lush
+					forests of the Garden Route National Park, explore the breathtaking
+					coastline on a guided kayak tour, head through the heads for some
+					Whale watching, try your hand zip-lining through the treetops, or
+					simply take a stroll around town and enjoy the many local restaurants.
+					<br />
+					<br />
+					So why wait?
+					<a
+						class="activities-section__description--cta"
+						href="https://book.nightsbridge.com/15693"
+						target="__blank"
+						>Come and create unforgettable memories in Knysna.</a
+					>
+				</p>
+				<a href="./activities.html">
+					<img
+						class="activities-section__image"
+						src="./images/desktop/activities/ocean-oddyssey/ocean-oddyssey-whale.jpg"
+						width="1425"
+						height="752.08"
+						loading="lazy"
+						alt="A humpback whale jumping out of blue ocean water."
+					/>
+				</a>
+			</section>
+		</main>
+		<custom-footer></custom-footer>
+	</body>
+</html>
