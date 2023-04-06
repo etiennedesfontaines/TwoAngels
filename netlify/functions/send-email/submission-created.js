@@ -3,19 +3,14 @@ const SibApiV3Sdk = require("sib-api-v3-sdk");
 const sendInBlueApiKey = process.env.SEND_IN_BLUE_API_KEY;
 
 const handler = async (event) => {
+	console.log(event);
 	try {
 		const defaultClient = SibApiV3Sdk.ApiClient.instance;
-		// Configure API key authorization: api-key
 		const apiKey = defaultClient.authentications["api-key"];
 		apiKey.apiKey = sendInBlueApiKey;
-		// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-		//apiKey.apiKeyPrefix['api-key'] = "Token"
 
-		// Configure API key authorization: partner-key
 		const partnerKey = defaultClient.authentications["partner-key"];
 		partnerKey.apiKey = sendInBlueApiKey;
-		// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-		//partnerKey.apiKeyPrefix['partner-key'] = "Token"
 
 		const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
