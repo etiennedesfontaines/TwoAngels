@@ -4,8 +4,6 @@ const sendInBlueApiKey = process.env.SEND_IN_BLUE_API_KEY;
 
 const handler = async (event) => {
 	try {
-		// console.log(process.env);
-		// const subject = event.queryStringParameters.name || "World";
 		const defaultClient = SibApiV3Sdk.ApiClient.instance;
 		// Configure API key authorization: api-key
 		const apiKey = defaultClient.authentications["api-key"];
@@ -31,7 +29,7 @@ const handler = async (event) => {
 			to: [
 				{
 					email: "erdesfontaines@gmail.com",
-					name: "Eti the genius",
+					name: "Eti",
 				},
 			],
 
