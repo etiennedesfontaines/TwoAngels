@@ -1,9 +1,10 @@
-// Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 const SibApiV3Sdk = require("sib-api-v3-sdk");
 const sendInBlueApiKey = process.env.SEND_IN_BLUE_API_KEY;
 
 const handler = async (event) => {
-	console.log(event);
+	const eventBody = JSON.parse(event.body);
+	const contactFormData = eventBody.payload.data;
+
 	try {
 		const defaultClient = SibApiV3Sdk.ApiClient.instance;
 		const apiKey = defaultClient.authentications["api-key"];
@@ -14,50 +15,40 @@ const handler = async (event) => {
 
 		const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
-		let sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail(); // SendSmtpEmail | Values to send a transactional email
+		let sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
 
 		sendSmtpEmail = {
-			// sender: {
-			// 	name: "Etienne",
-			// 	email: "erdesfontaines@gmail.com",
-			// },
 			to: [
 				{
 					email: "erdesfontaines@gmail.com",
-					name: "Eti",
+					name: "Robert",
 				},
 			],
 
 			templateId: 1,
 			params: {
-				name: "John",
+				name: contactFormData.name,
+				email: contactFormData.email,
+				contactNumber: contactFormData.tel,
+				message: contactFormData.message,
 			},
+
 			headers: {
 				"api-key": process.env.SEND_IN_BLUE_API_KEY,
 				"content-type": "application/json",
 				"accept": "application/json", //prettier-ignore
 			},
 		};
+		const result = await apiInstance.sendTransacEmail(sendSmtpEmail);
 
-		const result = await apiInstance.sendTransacEmail(sendSmtpEmail).then(
-			function (data) {
-				console.log(
-					"API called successfully. Returned data: " + JSON.stringify(data)
-				);
-			},
-			function (error) {
-				console.error(error);
-			}
-		);
+		console.log("API called successfully. Returned data: " + JSON.stringify(result)); //prettier-ignore
 		return {
 			statusCode: 200,
 			body: JSON.stringify({ message: result }),
-			// // more keys you can return:
-			// headers: { "headerName": "headerValue", ... },
-			// isBase64Encoded: true,
 		};
-	} catch (error) {
-		return { statusCode: 500, body: error.toString() };
+	} catch (err) {
+		console.error(err);
+		return { statusCode: 500, body: err.toString() };
 	}
 };
 
