@@ -2,13 +2,18 @@
 
 ## To do:
 
-- check responsiveness.
+- Site still slow, namely the image loading.
 
-  - Movile (landscape) - Copy is the wrong size - correct.
+  - Uncertain how to optimise further?
+  - webP images?
+  - Removing gradients from code and applying directly to images.
+  - Using Webpack to launch site?
+
+- check responsiveness.
 
 - data submission handling
 
-  - Data is being successfully submitted to netlify, I'm just uncertain how to get it from there to my Fathers email address...
+  - privacy policy agreement arrives in backend but not being sent in email body, but I don't think this matters?
 
 - Changing Domain Name (How to get current site deployed at TwoAngels.co.za)
 
@@ -16,7 +21,6 @@
 
 - Refactor
 
-  - code base
   - Readme
   - Design
 
