@@ -20,7 +20,7 @@ const handler = async (event) => {
 		sendSmtpEmail = {
 			to: [
 				{
-					email: "erdesfontaines@gmail.com",
+					email: "bassecour.rd@mweb.co.za",
 					name: "Robert",
 				},
 			],
