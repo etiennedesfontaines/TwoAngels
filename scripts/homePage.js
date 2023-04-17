@@ -67,7 +67,7 @@ const cards = [
 	{
 		heading: `Main House`,
 		description: `Dreams do come true...<br />
-		Main House is your unforgetable holiday for fourteen.`,
+		Main House is your memorable holiday for fourteen.`,
 		accomodates: `14`,
 		imageDesktop: `../images/desktop/accommodation/twoangels-seaside-accommodation-knysna-western-cape.jpg`,
 		imageMobile: `../images/mobile/accommodation/twoangels-seaside-accommodation-knysna-western-cape.jpg`,
