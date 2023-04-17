@@ -25,9 +25,22 @@
   - Design
 
 - Other:
+
   - Privacy policy page
   - sitemap (XML)
   - Security
+
+- Configuring external dns for a custom domain.
+- configuring and apx domain.
+- data submission handling
+- creating and sending transactional emails (api call to email client).
+- async await
+- SEO
+- semantic html
+- image optimisation, lazy loading etc
+- jquery libraries for touch swipe functionality
+- creating package.json file
+- Installing and using node packages
 
 ## Issues - GitHub:
 
