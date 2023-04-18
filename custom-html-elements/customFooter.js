@@ -30,7 +30,7 @@ class CustomFooter extends HTMLElement {
             <small class="footer__site-info">
                 © 2022 TwoAngels (Pty) Ltd. All rights reserved.</small
             >
-            <a class="footer__site-info" href="./privacy-policy.html">Privacy policy</a>
+            <a class="footer__site-info" href="./privacy-policy.html" target="_blank">Privacy policy</a>
 
             <a class="footer__site-info footer__site-info--no-padding" href="">Sitemap</a>
         </div>
