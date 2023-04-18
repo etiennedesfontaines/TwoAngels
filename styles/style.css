@@ -821,7 +821,7 @@ ul {
     padding: 3.2rem 12rem 4.8rem 12rem;
   }
 }
-@media screen and (max-width: 744px), screen and (max-height: 744px) and (orientation: landscape) {
+@media screen and (max-width: 912px), screen and (max-height: 912px) and (orientation: landscape) {
   h1,
   h2 {
     font-size: 3.2rem;
@@ -882,6 +882,7 @@ ul {
     color: white;
   }
   .hamburger-menu-icon {
+    cursor: pointer;
     display: block;
   }
   .burger-menu--active {
