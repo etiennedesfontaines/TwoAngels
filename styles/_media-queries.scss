@@ -26,8 +26,8 @@
 }
 
 //Tablet
-@media screen and (max-width: 744px),
-	screen and (max-height: 744px) and (orientation: landscape) {
+@media screen and (max-width: 912px),
+	screen and (max-height: 912px) and (orientation: landscape) {
 	h1,
 	h2 {
 		font-size: 3.2rem;
@@ -100,10 +100,9 @@
 	}
 
 	.hamburger-menu-icon {
+		cursor: pointer;
 		display: block;
 	}
-	//The below name is confusing
-	//Refactor naming for burger-icon, menu, items etc.
 	.burger-menu--active {
 		transform: translateX(0px);
 	}
