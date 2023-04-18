@@ -63,6 +63,8 @@
 	.nav-bar {
 		&__content {
 			padding: $base-unit $spacing-m 0 $spacing-m;
+			//temp.
+			justify-content: center;
 		}
 
 		&__nav-list {
@@ -102,6 +104,9 @@
 	.hamburger-menu-icon {
 		cursor: pointer;
 		display: block;
+		//temp.
+		position: absolute;
+		left: $spacing-s;
 	}
 	.burger-menu--active {
 		transform: translateX(0px);
@@ -343,18 +348,15 @@
 			padding: 0;
 			justify-content: center;
 			flex-wrap: wrap;
-			//gap size?
 			gap: 2.4rem;
 		}
 		&__icon-list-item {
 			gap: 0.8rem;
 		}
 		&__icon {
-			//icon size?
 			width: 2.4rem;
 		}
 		&__icon-description {
-			//description size?
 			font-size: 1.2rem;
 		}
 		.buttons {
@@ -427,6 +429,12 @@
 			gap: $spacing-xxs;
 		}
 	}
+	.privacy-policy {
+		padding: $spacing-l $spacing-xxl;
+		&__heading {
+			font-size: 2.8rem;
+		}
+	}
 }
 @media screen and (max-height: 912px) and (orientation: landscape) {
 	.hero-section {
@@ -480,6 +488,10 @@
 			padding: $base-unit 0rem 0.2rem 0rem;
 		}
 	}
+	.hamburger-menu-icon {
+		//temp.
+		left: $spacing-xxs;
+	}
 
 	.hero-section {
 		background-image: url(../images/mobile/background/hero/hero-portrait.jpg);
@@ -527,7 +539,6 @@
 		}
 	}
 	.testimonials-section {
-		// display: none;
 		margin: 0rem $spacing-xxs $spacing-xs $spacing-xxs;
 		&__profile-image {
 			width: 7.2rem;
@@ -560,7 +571,6 @@
 				right: 0.4rem;
 				transform: translateY(-100%);
 			}
-			// display: none;
 		}
 	}
 	.activities-section {
@@ -685,6 +695,12 @@
 		}
 		.contact-info__content {
 			gap: $base-unit;
+		}
+	}
+	.privacy-policy {
+		padding: $spacing-m $spacing-l;
+		&__heading {
+			font-size: 2rem;
 		}
 	}
 }
