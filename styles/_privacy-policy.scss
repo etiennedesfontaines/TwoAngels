@@ -1,0 +1,12 @@
+.privacy-policy {
+	padding: $spacing-l $spacing-xxxl;
+
+	a {
+		color: $dark-blue;
+	}
+	&__heading {
+		text-align: left;
+		font-size: 3.2rem;
+		padding: 2rem 0rem;
+	}
+}

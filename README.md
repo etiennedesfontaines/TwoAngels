@@ -10,15 +10,9 @@
   - Using Webpack to launch site?
 
 - check responsiveness.
-
-- data submission handling
-
-  - privacy policy agreement arrives in backend but not being sent in email body, but I don't think this matters?
-
-- Changing Domain Name (How to get current site deployed at TwoAngels.co.za)
-
-  - How is the domain served?
-
+- Issue with responsiveness: Small laptops and low res screens are reading as tablet.
+  I think I may need to restyle mobile first. (enormous amount of work).
+  Or find a fix using device detection.
 - Refactor
 
   - Readme
@@ -26,7 +20,6 @@
 
 - Other:
 
-  - Privacy policy page
   - sitemap (XML)
   - Security
 

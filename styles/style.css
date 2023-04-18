@@ -797,6 +797,18 @@ ul {
   }
 }
 
+.privacy-policy {
+  padding: 4.8rem 24rem;
+}
+.privacy-policy a {
+  color: #1b2c8c;
+}
+.privacy-policy__heading {
+  text-align: left;
+  font-size: 3.2rem;
+  padding: 2rem 0rem;
+}
+
 @media screen and (max-width: 1680px) {
   .nav-bar__content {
     padding: 0rem 12rem 0rem 12rem;
@@ -851,6 +863,7 @@ ul {
   }
   .nav-bar__content {
     padding: 0.8rem 4rem 0 4rem;
+    justify-content: center;
   }
   .nav-bar__nav-list {
     position: absolute;
@@ -884,6 +897,8 @@ ul {
   .hamburger-menu-icon {
     cursor: pointer;
     display: block;
+    position: absolute;
+    left: 3.2rem;
   }
   .burger-menu--active {
     transform: translateX(0px);
@@ -1174,6 +1189,12 @@ ul {
   .contact-form .contact-info__content {
     gap: 1.6rem;
   }
+  .privacy-policy {
+    padding: 4.8rem 12rem;
+  }
+  .privacy-policy__heading {
+    font-size: 2.8rem;
+  }
 }
 @media screen and (max-height: 912px) and (orientation: landscape) {
   .hero-section {
@@ -1213,6 +1234,9 @@ ul {
   }
   .nav-bar__logo {
     padding: 0.8rem 0rem 0.2rem 0rem;
+  }
+  .hamburger-menu-icon {
+    left: 1.6rem;
   }
   .hero-section {
     background-image: url(../images/mobile/background/hero/hero-portrait.jpg);
@@ -1396,6 +1420,12 @@ ul {
   }
   .contact-form .contact-info__content {
     gap: 0.8rem;
+  }
+  .privacy-policy {
+    padding: 4rem 4.8rem;
+  }
+  .privacy-policy__heading {
+    font-size: 2rem;
   }
 }
 @media screen and (max-height: 414px) and (orientation: landscape) {
