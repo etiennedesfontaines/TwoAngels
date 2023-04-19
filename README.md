@@ -13,6 +13,9 @@
 - Issue with responsiveness: Small laptops and low res screens are reading as tablet.
   I think I may need to restyle mobile first. (enormous amount of work).
   Or find a fix using device detection.
+- hamburger functionality compromised on 13 inch 2019 macbook - I believe it is due to a hover state triggering in movbile styling, but the issue isn't replecating on other laptops that have mobile styling applied.
+  The issue is that the suits and cottages tab of the hamburger menu isn't clickable, so the --open class is not being applied.
+
 - Refactor
 
   - Readme
