@@ -833,7 +833,7 @@ ul {
     padding: 3.2rem 12rem 4.8rem 12rem;
   }
 }
-@media screen and (max-width: 912px), screen and (max-height: 912px) and (orientation: landscape) {
+@media screen and (max-width: 912px), (max-height: 912px) and (orientation: landscape) {
   h1,
   h2 {
     font-size: 3.2rem;
