@@ -27,7 +27,7 @@
 
 //Tablet
 @media screen and (max-width: 912px),
-	screen and (max-height: 912px) and (orientation: landscape) {
+	(max-height: 912px) and (orientation: landscape) {
 	h1,
 	h2 {
 		font-size: 3.2rem;
