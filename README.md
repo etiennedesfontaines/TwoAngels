@@ -47,7 +47,6 @@ I began by outlining the minimum viable product and setting the steps necessary 
 #### HTML structure
 
 I started this build with the HTML, creating each page and populating it with its content, prior implementing any styling or functionality.
-
 I considered the HTML from two angles:
 
 - Semantically to increase accessibility and aid search engine optimisation.
@@ -101,7 +100,6 @@ I initially styled the site using complex CSS selectors, which successfully achi
 ### Netlify functions
 
 - I learnt to create and utilise netlify functions, namely for data submission handling.
-
 - Enviromental variables and keeping API keys secure.
 
 ### Domain
@@ -129,7 +127,6 @@ I used a jQuery library for the websites touch swipe functionality.
 ### Speed
 
 The site still slower than I would like, I believe namely due to image loading. I am uncertain how to further optimise.
-
 Cosiderations:
 
 - webP images
@@ -138,18 +135,12 @@ Cosiderations:
 
 ### Responsiveness
 
-- Small laptops and low-res screens are reading as tablets/mobile. This is the result of building desktop-first, poor use of media queries utilizing max-height and orientation, and isMobile specification not being complex enough.
-
-I believe I know how to fix it, I just need to make the time.
-
-Ideally, I would like to restyle - mobile first - but I do not currently have time for that.
-
+- Small laptops and low-res screens are reading as tablets/mobile. This is the result of building desktop-first, poor use of media queries utilizing max-height and orientation, and isMobile specification not being complex enough. I believe I know how to fix it, I just need to make the time. Ideally, I would like to restyle - mobile first - but I do not currently have time for that.
 - A function to update isMobile when screen size changes is needed. Currently, the page needs to be refreshed after screen size changes to render mobile components.
 
 ### Other:
 
 - Using text-shadow for the bold hover state in the Nav bar, but would prefer to use an actual bold font and implement a solution to prevent layout shift. The solutions I tried weren't working, and I couldn't afford to allocate more time to this at this point.
-
 - Both homePage.js and hamburgerMenu.js have temporary solutions for isMobile.
 
 ## To Do
@@ -157,7 +148,6 @@ Ideally, I would like to restyle - mobile first - but I do not currently have ti
 ### Refactor:
 
 - Separate @media query styles into appropriate style sheets.
-
 - Use CSS mixins and variables to reduce any unnecessary repetition.
 - Consider creating a folder for HTML files.
 - Address carousel logic repetition.
@@ -179,9 +169,6 @@ My Brothers, Emile and Bastien Desfontaines, both of whom were invaluable in gui
 ## Etienne Desfontaines
 
 - [Etienne Desfontaines](https://etiennedesfontaines.com/)
-
 - [Linkedin](https://www.linkedin.com/in/etienne-desfontaines-818349284/)
-
 - [Frontend Mentor](https://www.frontendmentor.io/profile/etiennedesfontaines)
-
 - [Exercism](https://exercism.io/profiles/etiennedesfontaines)
