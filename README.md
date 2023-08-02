@@ -168,7 +168,7 @@ My Brothers, Emile and Bastien Desfontaines, both of whom were invaluable in gui
 
 ## Etienne Desfontaines
 
-- [Etienne Desfontaines](https://etiennedesfontaines.com/)
+- [Website](https://etiennedesfontaines.com/)
 - [Linkedin](https://www.linkedin.com/in/etienne-desfontaines-818349284/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/etiennedesfontaines)
 - [Exercism](https://exercism.io/profiles/etiennedesfontaines)
