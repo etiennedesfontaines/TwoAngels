@@ -70,7 +70,7 @@ imageCarouselButtons.forEach((button) => {
 });
 
 //Add to issues tab in github project - Current implementation uses inner html, brittle if design changes and inner
-// HTML is no longer number. Potential solutions - class Lists (unique), Data Attributes, seperate carosol instances
+// HTML is no longer a number. Potential solutions - class Lists (unique), Data Attributes, seperate carosol instances
 
 imageCarouselProgressIndicators.forEach((indicator, index) => {
 	indicator.addEventListener("click", (e) => {
