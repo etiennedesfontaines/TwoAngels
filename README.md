@@ -5,9 +5,9 @@
 ## Table of contents
 
 - [Overview](#overview)
-- [Project links](#links)
+- [Project Links](#links)
 - [Development](#development)
-- [What I learned](#what-i-learned)
+- [What I Learned](#what-i-learned)
 - [Issues](#issues)
 - [To Do](#to-do)
 - [Acknowledgments](#acknowledgments)
@@ -19,10 +19,10 @@ A marketing website for a seaside guest house and its accompanying cottages in K
 
 ### My Roles:
 
-- Design
-- Art Direction
-- Copywriting
-- Development
+- Designer
+- Art Director
+- Copywriter
+- Developer
 
 ### Links
 
