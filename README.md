@@ -9,6 +9,7 @@
 - [Development](#development)
 - [What I learned](#what-i-learned)
 - [Issues](#issues)
+- [To Do](#to-do)
 - [Acknowledgments](#acknowledgments)
 - [Author](#etienne-desfontaines)
 
@@ -105,8 +106,8 @@ I initially styled the site using complex CSS selectors, which successfully achi
 
 ### Domain
 
-    - Configuring external DNS for a custom domain.
-    - Configuring an apex domain.
+- Configuring external DNS for a custom domain.
+- Configuring an apex domain.
 
 ### jQuery
 
@@ -160,21 +161,16 @@ Ideally, I would like to restyle - mobile first - but I do not currently have ti
 - Use CSS mixins and variables to reduce any unnecessary repetition.
 - Consider creating a folder for HTML files.
 - Address carousel logic repetition.
-
 - Create components for reusable elements (time permitting).
-
 - Add a variable for 6.4 rem - adjust other variables so they make sense in size order and name.
 
 ### Other:
 
 - sitemap (XML)
 - Security
-
-  - Mobile "Book Now" button, invisible after use. This is due to hover state (wrap in media query).
-
-  - Add TabIndex for all nav items.
-
-  - Implement a more effective device detection method or utilize an appropriate library.
+- Mobile "Book Now" button, invisible after use. This is due to hover state (wrap in media query).
+- Add TabIndex for all nav items.
+- Implement a more effective device detection method or utilize an appropriate library.
 
 ## Acknowledgments
 
@@ -182,10 +178,10 @@ My Brothers, Emile and Bastien Desfontaines, both of whom were invaluable in gui
 
 ## Etienne Desfontaines
 
-- Linkedin - [Etienne Desfontaines](https://www.linkedin.com/in/etienne-desfontaines-818349284/)
+- [Etienne Desfontaines](https://etiennedesfontaines.com/)
 
-- Website - [Etienne Desfontaines](https://etiennedesfontaines.com/)
+- [Linkedin](https://www.linkedin.com/in/etienne-desfontaines-818349284/)
 
-- Frontend Mentor - [@etiennedesfontaines](https://www.frontendmentor.io/profile/etiennedesfontaines)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/etiennedesfontaines)
 
-- Exercism - [Etienne Desfontaines](https://exercism.io/profiles/etiennedesfontaines)
+- [Exercism](https://exercism.io/profiles/etiennedesfontaines)
