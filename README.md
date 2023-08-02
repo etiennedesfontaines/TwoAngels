@@ -26,7 +26,7 @@ A marketing website for a seaside guest house and its accompanying cottages in K
 
 ### Links
 
-- [Live site URL](https://twoangels.co.za/)
+- [Live site](https://twoangels.co.za/)
 
 ## Development
 
