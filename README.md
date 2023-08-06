@@ -40,8 +40,6 @@ A marketing website for a seaside guest house and its accompanying cottages in K
 
 ### My process
 
-This documentation only concerns itself with my development process in this project, not the other roles I was responsibe for.
-
 I began by outlining the minimum viable product and setting the steps necessary to accomplish it against a calendar leading to the project deadline. I then embarked on the build, following that outline as closely as was possible.
 
 #### HTML structure
